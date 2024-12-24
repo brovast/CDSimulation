@@ -1,0 +1,3 @@
+D:\IndSoftware\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\CDSimulation.dir/objects.a
+D:\IndSoftware\Qt\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\CDSimulation.dir/objects.a @CMakeFiles\CDSimulation.dir\objects1.rsp
+D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\CDSimulation.dir/objects.a -Wl,--no-whole-archive -o CDSimulation.exe -Wl,--out-implib,libCDSimulation.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CDSimulation.dir\linkLibs.rsp

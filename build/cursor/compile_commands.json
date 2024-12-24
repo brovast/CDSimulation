@@ -1,0 +1,86 @@
+[
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\CDSimulation_autogen\\mocs_compilation.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\build\\cursor\\src\\CDSimulation_autogen\\mocs_compilation.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/mocs_compilation.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\main.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\main.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/main.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\core\\database.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\core\\database.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/core/database.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\core\\user.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\core\\user.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/core/user.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\login.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\login.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/login.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\utils\\config.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\utils\\config.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\register.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\register.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/register.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\config_dialog.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\config_dialog.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\systemmanager.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\systemmanager.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/systemmanager.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\workbench.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\workbench.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/workbench.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\user_edit_dialog.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\user_edit_dialog.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/user_edit_dialog.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\usermanager.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\usermanager.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/usermanager.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\approvalmanager.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\approvalmanager.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\rolemanager.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\rolemanager.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj"
+}
+]

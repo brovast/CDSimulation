@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <customwidgets>
+  <customwidget>
+   <class>UserManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/usermanager.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RoleManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/rolemanager.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ApprovalManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/approvalmanager.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <class>SystemManager</class>
+ <widget class="QMainWindow" name="SystemManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统管理</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidgetMain">
+      <!-- 数据管理标签页 -->
+      <widget class="QWidget" name="tabDataManage">
+       <attribute name="title">
+        <string>数据管理</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTabWidget" name="tabWidgetDataManage">
+          <!-- 基础数据标签页 -->
+          <widget class="QWidget" name="tabBasicData">
+           <attribute name="title">
+            <string>基础数据库</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QTreeView" name="treeViewBasicData"/>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="labelImagePreview">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>图片预览</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="textEditContentPreview">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>200</height>
+                 </size>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <!-- 舱段数据标签页 -->
+          <widget class="QWidget" name="tabCompartmentData">
+           <attribute name="title">
+            <string>舱段数据库</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QTreeView" name="treeViewCDBasicData"/>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QTreeView" name="treeViewCDData"/>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QPushButton" name="btnNewModel">
+                  <property name="text">
+                   <string>新建型号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnAddStructureType">
+                  <property name="text">
+                   <string>添加结构类型</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnCopyData">
+                  <property name="text">
+                   <string>数据复制</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnDelete">
+                  <property name="text">
+                   <string>删除</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <!-- 任务管理标签页 -->
+      <widget class="QWidget" name="tabTaskManage">
+       <attribute name="title">
+        <string>任务管理</string>
+       </attribute>
+       <!-- 任务管理界面的具体实现将在后续添加 -->
+      </widget>
+      <!-- 系统管理标签页 -->
+      <widget class="QWidget" name="tabSystemManage">
+       <attribute name="title">
+        <string>系统管理</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTabWidget" name="tabWidgetSystemManage">
+          <!-- 用户管理标签页 -->
+          <widget class="QWidget" name="tabUserManage">
+           <attribute name="title">
+            <string>用户管理</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="UserManager" name="widgetUserManager" native="true"/>
+            </item>
+           </layout>
+          </widget>
+          <!-- 角色管理标签页 -->
+          <widget class="QWidget" name="tabRoleManage">
+           <attribute name="title">
+            <string>角色管理</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="RoleManager" name="widgetRoleManager" native="true"/>
+            </item>
+           </layout>
+          </widget>
+          <!-- 审批管理标签页 -->
+          <widget class="QWidget" name="tabApprovalManage">
+           <attribute name="title">
+            <string>审批管理</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="ApprovalManager" name="widgetApprovalManager" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui> 
