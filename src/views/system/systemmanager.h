@@ -3,6 +3,10 @@
 #include <QFileSystemModel>
 #include <QLabel>
 #include <QTextEdit>
+#include <QtCharts>
+#include <QChart>
+#include <QLineSeries>
+#include <QValueAxis>
 
 // 添加前向声明
 class UserManager;
@@ -51,6 +55,10 @@ private slots:
     void onSelectCSVClicked();
     void loadCSVData(const QString& filePath);
 
+    // 载荷库相关槽函数
+    void onSelectLoadPathClicked();  // 选择载荷库路径
+    void onLoadFileSelected(QListWidgetItem* item);  // 文件列表选择改变
+
 private:
     // 初始化和加载相关
     void initUI();
@@ -73,4 +81,12 @@ private:
     QFileSystemModel* m_basicDataModel;
     QString m_currentBasicDataPath;
     QString m_currentMaterialCSVPath;  // 保存当前材料库CSV文件路径
+    QString m_currentLoadPath;  // 当前载荷库路径
+    QChart* m_loadChart;  // 载荷曲线图
+    QLineSeries* m_loadSeries;  // 载荷数据序列
+
+    // 基础数据管理相关槽函数
+    void loadLoadFiles();  // 加载文件列表
+    void loadLoadData(const QString& filePath);  // 加载CSV数据
+    void updateLoadChart(const QVector<QPointF>& points);  // 更新曲线图
 }; 

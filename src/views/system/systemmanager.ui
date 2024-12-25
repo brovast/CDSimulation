@@ -237,6 +237,49 @@
            <attribute name="title">
             <string>载荷库</string>
            </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_load">
+            <!-- 左侧区域 -->
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_load_left">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_load_path">
+                <item>
+                 <widget class="QLabel" name="labelLoadPath">
+                  <property name="text">
+                   <string>载荷库路径：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditLoadPath">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnSelectLoadPath">
+                  <property name="text">
+                   <string>选择路径</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QListWidget" name="listLoadFiles"/>
+              </item>
+             </layout>
+            </item>
+            <!-- 中间区域 -->
+            <item>
+             <widget class="QTableWidget" name="tableLoadData"/>
+            </item>
+            <!-- 右侧区域 -->
+            <item>
+             <widget class="QChartView" name="chartLoadView"/>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>

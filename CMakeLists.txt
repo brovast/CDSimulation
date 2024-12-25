@@ -12,6 +12,7 @@ find_package(Qt6 REQUIRED COMPONENTS
     Gui
     Widgets
     Sql
+    Charts
 )
 
 # 源文件目录
@@ -19,3 +20,11 @@ add_subdirectory(src)
 
 set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_COMMAND} -E time")
 set(CMAKE_DEPENDS_IN_PROJECT_ONLY ON) 
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    Qt6::Sql
+    Qt6::Charts
+) 

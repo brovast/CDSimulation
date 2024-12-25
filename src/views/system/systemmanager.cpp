@@ -16,13 +16,26 @@
 #include <QFileInfo>
 #include <QRegularExpression>
 #include <QDateTime>
+#include <QtCharts>
+#include <QChart>
+#include <QLineSeries>
+#include <QValueAxis>
 
 SystemManager::SystemManager(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::SystemManager)
     , m_basicDataModel(new QFileSystemModel(this))
+    , m_loadChart(new QChart())
+    , m_loadSeries(new QLineSeries())
 {
     ui->setupUi(this);
+    
+    // 初始化图表
+    m_loadChart->addSeries(m_loadSeries);
+    m_loadChart->createDefaultAxes();
+    m_loadChart->setTitle("载荷曲线");
+    ui->chartLoadView->setChart(m_loadChart);
+    
     initUI();
     setupConnections();
     
@@ -35,6 +48,8 @@ SystemManager::SystemManager(QWidget* parent)
 SystemManager::~SystemManager()
 {
     delete ui;
+    delete m_loadChart;
+    delete m_loadSeries;
 }
 
 void SystemManager::initUI()
@@ -95,6 +110,13 @@ void SystemManager::initUI()
         ui->lineEditCSVPath->setText(m_currentMaterialCSVPath);
         loadCSVData(m_currentMaterialCSVPath);
     }
+    
+    // 加载载荷库路径
+    m_currentLoadPath = Config::getInstance().getValue("LoadData/Path").toString();
+    if (!m_currentLoadPath.isEmpty()) {
+        ui->lineEditLoadPath->setText(m_currentLoadPath);
+        loadLoadFiles();
+    }
 }
 
 void SystemManager::setupConnections()
@@ -120,7 +142,7 @@ void SystemManager::setupConnections()
     connect(ui->treeViewBasicData, &QTreeView::clicked, 
             this, &SystemManager::onBasicDataItemClicked);
 
-    // 添加舱段���据路径选择按钮的连接
+    // 添加舱段数据路径选择按钮的连接
     connect(ui->btnSelectCDDataPath, &QPushButton::clicked, this, [this]() {
         QString path = QFileDialog::getExistingDirectory(
             this,
@@ -153,6 +175,12 @@ void SystemManager::setupConnections()
 
     // 添加材料库相关连接
     connect(ui->btnSelectCSV, &QPushButton::clicked, this, &SystemManager::onSelectCSVClicked);
+
+    // 添加载荷库相关连接
+    connect(ui->btnSelectLoadPath, &QPushButton::clicked, 
+            this, &SystemManager::onSelectLoadPathClicked);
+    connect(ui->listLoadFiles, &QListWidget::itemClicked, 
+            this, &SystemManager::onLoadFileSelected);
 }
 
 void SystemManager::loadBasicDataTree()
@@ -334,7 +362,7 @@ void SystemManager::onCopyDataClicked()
     QString sourcePath = sourceModel->filePath(sourceIndex);
     QString targetPath = targetModel->filePath(targetIndex);
     
-    // 确保源是文件夹
+    // 确认源是文件夹
     QFileInfo sourceInfo(sourcePath);
     if (!sourceInfo.isDir()) {
         QMessageBox::warning(this, "警告", "请选择一个文件夹进行复制！");
@@ -493,7 +521,7 @@ void SystemManager::onDeleteBasicData()
 {
     QModelIndex currentIndex = ui->treeViewBasicData->currentIndex();
     if (!currentIndex.isValid()) {
-        QMessageBox::warning(this, "警告", "请先选择要删除的项目！");
+        QMessageBox::warning(this, "警告", "请先��择要删除的项目！");
         return;
     }
     
@@ -907,6 +935,120 @@ void SystemManager::loadCSVData(const QString& filePath)
     
     // 调整列宽以适应内容
     ui->tableMaterial->resizeColumnsToContents();
+}
+
+void SystemManager::onSelectLoadPathClicked()
+{
+    QString path = QFileDialog::getExistingDirectory(
+        this,
+        "选择载荷库目录",
+        QString(),
+        QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks
+    );
+    
+    if (!path.isEmpty()) {
+        m_currentLoadPath = path;
+        ui->lineEditLoadPath->setText(path);
+        Config::getInstance().setValue("LoadData/Path", path);
+        loadLoadFiles();
+    }
+}
+
+void SystemManager::loadLoadFiles()
+{
+    ui->listLoadFiles->clear();
+    
+    if (m_currentLoadPath.isEmpty()) return;
+    
+    QDir dir(m_currentLoadPath);
+    QStringList filters;
+    filters << "*.csv";
+    QFileInfoList files = dir.entryInfoList(filters, QDir::Files);
+    
+    for (const QFileInfo& file : files) {
+        ui->listLoadFiles->addItem(file.fileName());
+    }
+}
+
+void SystemManager::onLoadFileSelected(QListWidgetItem* item)
+{
+    if (!item) return;
+    
+    QString filePath = QDir(m_currentLoadPath).filePath(item->text());
+    loadLoadData(filePath);
+}
+
+void SystemManager::loadLoadData(const QString& filePath)
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::critical(this, "错误", "无法打开CSV文件！");
+        return;
+    }
+    
+    QTextStream in(&file);
+    QVector<QPointF> points;
+    
+    // 读取表头
+    QString headerLine = in.readLine();
+    QStringList headers = headerLine.split(",");
+    
+    if (headers.size() != 2) {
+        QMessageBox::warning(this, "警告", "CSV文件格式不正确，需要两列数据！");
+        file.close();
+        return;
+    }
+    
+    ui->tableLoadData->clear();
+    ui->tableLoadData->setColumnCount(2);
+    ui->tableLoadData->setHorizontalHeaderLabels(headers);
+    
+    // 读取数据
+    int row = 0;
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QStringList fields = line.split(",");
+        
+        if (fields.size() == 2) {
+            bool ok1, ok2;
+            double x = fields[0].toDouble(&ok1);
+            double y = fields[1].toDouble(&ok2);
+            
+            if (ok1 && ok2) {
+                points.append(QPointF(x, y));
+                
+                ui->tableLoadData->insertRow(row);
+                ui->tableLoadData->setItem(row, 0, new QTableWidgetItem(fields[0]));
+                ui->tableLoadData->setItem(row, 1, new QTableWidgetItem(fields[1]));
+                row++;
+            }
+        }
+    }
+    
+    file.close();
+    
+    // 调整列宽以适应内容
+    ui->tableLoadData->resizeColumnsToContents();
+    
+    // 更新曲线图
+    updateLoadChart(points);
+}
+
+void SystemManager::updateLoadChart(const QVector<QPointF>& points)
+{
+    m_loadSeries->clear();
+    m_loadSeries->replace(points);
+    
+    // 自动调整坐标轴范围
+    m_loadChart->createDefaultAxes();
+    
+    // 设置坐标轴标题
+    QValueAxis* axisX = qobject_cast<QValueAxis*>(m_loadChart->axes(Qt::Horizontal).first());
+    QValueAxis* axisY = qobject_cast<QValueAxis*>(m_loadChart->axes(Qt::Vertical).first());
+    if (axisX && axisY) {
+        axisX->setTitleText("X轴");
+        axisY->setTitleText("Y轴");
+    }
 }
 
 // 其他槽函数的实现将在后续添加... 

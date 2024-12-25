@@ -9,6 +9,7 @@
 #ifndef UI_SYSTEMMANAGER_H
 #define UI_SYSTEMMANAGER_H
 
+#include <QtCharts/QChartView>
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
@@ -19,6 +20,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -85,6 +87,15 @@ public:
     QPushButton *btnSelectCSV;
     QTableWidget *tableMaterial;
     QWidget *tabLoadData;
+    QHBoxLayout *horizontalLayout_load;
+    QVBoxLayout *verticalLayout_load_left;
+    QHBoxLayout *horizontalLayout_load_path;
+    QLabel *labelLoadPath;
+    QLineEdit *lineEditLoadPath;
+    QPushButton *btnSelectLoadPath;
+    QListWidget *listLoadFiles;
+    QTableWidget *tableLoadData;
+    QChartView *chartLoadView;
     QWidget *tabTaskManage;
     QVBoxLayout *verticalLayout_task;
     QHBoxLayout *horizontalLayout_filter;
@@ -351,6 +362,49 @@ public:
         tabWidgetDataManage->addTab(tabMaterialData, QString());
         tabLoadData = new QWidget();
         tabLoadData->setObjectName("tabLoadData");
+        horizontalLayout_load = new QHBoxLayout(tabLoadData);
+        horizontalLayout_load->setObjectName("horizontalLayout_load");
+        verticalLayout_load_left = new QVBoxLayout();
+        verticalLayout_load_left->setObjectName("verticalLayout_load_left");
+        horizontalLayout_load_path = new QHBoxLayout();
+        horizontalLayout_load_path->setObjectName("horizontalLayout_load_path");
+        labelLoadPath = new QLabel(tabLoadData);
+        labelLoadPath->setObjectName("labelLoadPath");
+
+        horizontalLayout_load_path->addWidget(labelLoadPath);
+
+        lineEditLoadPath = new QLineEdit(tabLoadData);
+        lineEditLoadPath->setObjectName("lineEditLoadPath");
+        lineEditLoadPath->setReadOnly(true);
+
+        horizontalLayout_load_path->addWidget(lineEditLoadPath);
+
+        btnSelectLoadPath = new QPushButton(tabLoadData);
+        btnSelectLoadPath->setObjectName("btnSelectLoadPath");
+
+        horizontalLayout_load_path->addWidget(btnSelectLoadPath);
+
+
+        verticalLayout_load_left->addLayout(horizontalLayout_load_path);
+
+        listLoadFiles = new QListWidget(tabLoadData);
+        listLoadFiles->setObjectName("listLoadFiles");
+
+        verticalLayout_load_left->addWidget(listLoadFiles);
+
+
+        horizontalLayout_load->addLayout(verticalLayout_load_left);
+
+        tableLoadData = new QTableWidget(tabLoadData);
+        tableLoadData->setObjectName("tableLoadData");
+
+        horizontalLayout_load->addWidget(tableLoadData);
+
+        chartLoadView = new QChartView(tabLoadData);
+        chartLoadView->setObjectName("chartLoadView");
+
+        horizontalLayout_load->addWidget(chartLoadView);
+
         tabWidgetDataManage->addTab(tabLoadData, QString());
 
         verticalLayout_2->addWidget(tabWidgetDataManage);
@@ -697,6 +751,8 @@ public:
         labelCSVPath->setText(QCoreApplication::translate("SystemManager", "CSV\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
         btnSelectCSV->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\346\226\207\344\273\266", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabMaterialData), QCoreApplication::translate("SystemManager", "\346\235\220\346\226\231\345\272\223", nullptr));
+        labelLoadPath->setText(QCoreApplication::translate("SystemManager", "\350\275\275\350\215\267\345\272\223\350\267\257\345\276\204\357\274\232", nullptr));
+        btnSelectLoadPath->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\350\267\257\345\276\204", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabLoadData), QCoreApplication::translate("SystemManager", "\350\275\275\350\215\267\345\272\223", nullptr));
         tabWidgetMain->setTabText(tabWidgetMain->indexOf(tabDataManage), QCoreApplication::translate("SystemManager", "\346\225\260\346\215\256\347\256\241\347\220\206", nullptr));
         labelStatus->setText(QCoreApplication::translate("SystemManager", "\347\212\266\346\200\201\357\274\232", nullptr));

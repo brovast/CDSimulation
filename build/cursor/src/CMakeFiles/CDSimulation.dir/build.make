@@ -439,8 +439,11 @@ src/CDSimulation.exe: src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_a
 src/CDSimulation.exe: src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.obj
 src/CDSimulation.exe: src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.obj
 src/CDSimulation.exe: src/CMakeFiles/CDSimulation.dir/build.make
-src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Widgets.a
 src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Sql.a
+src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Charts.a
+src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6OpenGLWidgets.a
+src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Widgets.a
+src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6OpenGL.a
 src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Gui.a
 src/CDSimulation.exe: D:/IndSoftware/Qt/6.7.3/mingw_64/lib/libQt6Core.a
 src/CDSimulation.exe: src/CMakeFiles/CDSimulation.dir/linkLibs.rsp
