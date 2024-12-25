@@ -3,6 +3,47 @@
 #include "../../core/database.h"
 #include <QMessageBox>
 #include <QInputDialog>
+#include <QTreeWidgetItem>
+
+// 先实现辅助函数
+void RoleManager::collectPermissions(QTreeWidgetItem* item, QStringList& permissions, const QString& parentPath)
+{
+    if (!item) return;
+    
+    QString currentPath = parentPath.isEmpty() ? 
+                         item->text(0) : 
+                         parentPath + "/" + item->text(0);
+    
+    if (item->checkState(0) == Qt::Checked) {
+        permissions << currentPath;
+    }
+    
+    for (int i = 0; i < item->childCount(); ++i) {
+        collectPermissions(item->child(i), permissions, currentPath);
+    }
+}
+
+void RoleManager::setPermissionChecked(QTreeWidgetItem* item, const QStringList& permissions)
+{
+    if (!item) return;
+    
+    QString path = item->text(0);
+    QTreeWidgetItem* parent = item->parent();
+    while (parent) {
+        path = parent->text(0) + "/" + path;
+        parent = parent->parent();
+    }
+    
+    if (permissions.contains(path)) {
+        item->setCheckState(0, Qt::Checked);
+    } else {
+        item->setCheckState(0, Qt::Unchecked);
+    }
+    
+    for (int i = 0; i < item->childCount(); ++i) {
+        setPermissionChecked(item->child(i), permissions);
+    }
+}
 
 RoleManager::RoleManager(QWidget* parent)
     : QWidget(parent)
@@ -32,22 +73,6 @@ void RoleManager::initUI()
     ui->tableView->setColumnWidth(0, 50);  // ID列
     ui->tableView->setColumnWidth(1, 150); // 角色名称列
     ui->tableView->setColumnWidth(2, 200); // 权限列
-    
-    // 设置权限树
-    QTreeWidgetItem* dataManage = new QTreeWidgetItem(ui->treePermissions);
-    dataManage->setText(0, "数据管理");
-    dataManage->setFlags(dataManage->flags() | Qt::ItemIsUserCheckable);
-    dataManage->setCheckState(0, Qt::Unchecked);
-    
-    QTreeWidgetItem* taskManage = new QTreeWidgetItem(ui->treePermissions);
-    taskManage->setText(0, "任务管理");
-    taskManage->setFlags(taskManage->flags() | Qt::ItemIsUserCheckable);
-    taskManage->setCheckState(0, Qt::Unchecked);
-    
-    QTreeWidgetItem* systemManage = new QTreeWidgetItem(ui->treePermissions);
-    systemManage->setText(0, "系统管理");
-    systemManage->setFlags(systemManage->flags() | Qt::ItemIsUserCheckable);
-    systemManage->setCheckState(0, Qt::Unchecked);
 }
 
 void RoleManager::setupConnections()
@@ -75,10 +100,37 @@ void RoleManager::loadRoleList()
     QList<Database::RoleInfo> roles = Database::getInstance().getRoleList();
     for (const auto& role : roles) {
         QList<QStandardItem*> items;
-        items << new QStandardItem(QString::number(role.id))
-              << new QStandardItem(role.name)
-              << new QStandardItem(role.permissions);
+        
+        // ID列
+        items << new QStandardItem(QString::number(role.id));
+        
+        // 角色名称列
+        items << new QStandardItem(role.name);
+        
+        // 权限列 - 格式化显示权限
+        QStringList permList = role.permissions.split(",", Qt::SkipEmptyParts);
+        QString displayPerms;
+        for (const QString& perm : permList) {
+            if (!displayPerms.isEmpty()) {
+                displayPerms += "\n";
+            }
+            // 将路径形式的权限转换为更易读的形式
+            QString displayPerm = perm;
+            if (perm.contains("/")) {
+                QStringList parts = perm.split("/");
+                displayPerm = "  " + parts.last();  // 添加缩进
+            }
+            displayPerms += displayPerm;
+        }
+        items << new QStandardItem(displayPerms);
+        
         m_roleModel->appendRow(items);
+    }
+    
+    // 自动选中第一行并加载其权限
+    if (m_roleModel->rowCount() > 0) {
+        ui->tableView->selectRow(0);
+        loadPermissionList(m_roleModel->item(0, 0)->text().toInt());
     }
 }
 
@@ -94,15 +146,11 @@ void RoleManager::loadPermissionList(int roleId)
         }
     }
     
-    // 更新权限树的选中状态
-    for (int i = 0; i < ui->treePermissions->topLevelItemCount(); ++i) {
-        QTreeWidgetItem* item = ui->treePermissions->topLevelItem(i);
-        QString permName = item->text(0);
-        if (permissions.contains(permName)) {
-            item->setCheckState(0, Qt::Checked);
-        } else {
-            item->setCheckState(0, Qt::Unchecked);
-        }
+    // 根据权限设置下拉框
+    if (permissions.contains("登录权限/系统管理登录")) {
+        ui->comboBoxPermission->setCurrentText("系统管理");
+    } else {
+        ui->comboBoxPermission->setCurrentText("工作台");
     }
 }
 
@@ -179,17 +227,16 @@ void RoleManager::onSavePermissionsClicked()
     int roleId = m_roleModel->item(row, 0)->text().toInt();
     QString roleName = m_roleModel->item(row, 1)->text();
     
-    // 收集选中的权限
-    QStringList permissions;
-    for (int i = 0; i < ui->treePermissions->topLevelItemCount(); ++i) {
-        QTreeWidgetItem* item = ui->treePermissions->topLevelItem(i);
-        if (item->checkState(0) == Qt::Checked) {
-            permissions << item->text(0);
-        }
+    // 根据下拉框选择设置权限
+    QString permissions;
+    if (ui->comboBoxPermission->currentText() == "系统管理") {
+        permissions = "登录权限/系统管理登录,登录权限/工作台登录";
+    } else {
+        permissions = "登录权限/工作台登录";
     }
     
     // 更新角色权限
-    if (Database::getInstance().updateRole(roleId, roleName, permissions.join(","))) {
+    if (Database::getInstance().updateRole(roleId, roleName, permissions)) {
         loadRoleList();
         QMessageBox::information(this, "提示", "权限保存成功！");
     } else {

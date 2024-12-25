@@ -53,6 +53,8 @@ public:
 
     QList<ApprovalInfo> getApprovalList(int statusFilter = -1);
     
+    bool fixAdminPermissions();
+
 private:
     bool initDefaultAdmin();
     Database(QObject* parent = nullptr);

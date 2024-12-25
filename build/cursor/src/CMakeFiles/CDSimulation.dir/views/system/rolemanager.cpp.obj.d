@@ -363,6 +363,31 @@ src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
  D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/ui_rolemanager.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QVariant \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qvariant.h \
@@ -377,32 +402,23 @@ src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QComboBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QFormLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qformlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLayout \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHeaderView \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qheaderview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlabel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpicture.h \
@@ -416,10 +432,6 @@ src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableView \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
  D:/XMH_PROJECT/QT/CDSimulation/src/core/database.h \

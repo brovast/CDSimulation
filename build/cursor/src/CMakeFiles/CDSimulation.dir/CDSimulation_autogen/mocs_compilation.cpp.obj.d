@@ -395,11 +395,31 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_rolemanager.cpp \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
  D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_systemmanager.cpp \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/systemmanager.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmainwindow.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
  D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_user_edit_dialog.cpp \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/user_edit_dialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QPair \

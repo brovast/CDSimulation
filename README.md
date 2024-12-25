@@ -8,7 +8,7 @@
 项目根目录: D:\XMH_PROJECT\QT\CDSimulation
 
 ## 数据库位置
-sqlite3数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\database.db
+sqlite3数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\database\database.db
 超级管理员: admin 密码: admin
 数据文件夹: exe同级目录下的database文件夹
 

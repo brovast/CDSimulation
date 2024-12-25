@@ -1,6 +1,9 @@
 #pragma once
 #include <QWidget>
 #include <QStandardItemModel>
+#include <QTreeWidgetItem>
+#include <QString>
+#include <QStringList>
 
 namespace Ui {
 class RoleManager;
@@ -25,6 +28,8 @@ private:
     void setupConnections();
     void loadRoleList();
     void loadPermissionList(int roleId);
+    void collectPermissions(QTreeWidgetItem* item, QStringList& permissions, const QString& parentPath);
+    void setPermissionChecked(QTreeWidgetItem* item, const QStringList& permissions);
 
     Ui::RoleManager* ui;
     QStandardItemModel* m_roleModel;

@@ -56,7 +56,11 @@ bool Database::initDefaultAdmin()
     
     if (query.value(0).toInt() == 0) {
         // 创建角色表中的管理员角色（如果不存在）
-        query.prepare("INSERT OR IGNORE INTO roles (id, name, permissions) VALUES (1, '管理员', 'all')");
+        QString adminPermissions = "登录权限/系统管理登录,登录权限/工作台登录";
+        
+        // 使用 INSERT OR REPLACE 而不是 INSERT OR IGNORE，确保权限被更新
+        query.prepare("INSERT OR REPLACE INTO roles (id, name, permissions) VALUES (1, '管理员', ?)");
+        query.addBindValue(adminPermissions);
         if (!query.exec()) {
             qCritical() << "创建管理员角色失败:" << query.lastError().text();
             return false;
@@ -69,7 +73,16 @@ bool Database::initDefaultAdmin()
             return false;
         }
         
-        qInfo() << "成功创建默认管理员账户";
+        // 创建工程师角色
+        QString engineerPermissions = "登录权限/工作台登录";
+        query.prepare("INSERT OR IGNORE INTO roles (id, name, permissions) VALUES (2, '工程师', ?)");
+        query.addBindValue(engineerPermissions);
+        if (!query.exec()) {
+            qCritical() << "创建工程师角色失败:" << query.lastError().text();
+            return false;
+        }
+        
+        qInfo() << "成功创建默认管理员账户和角色";
     }
     
     return true;
@@ -367,4 +380,20 @@ QList<Database::ApprovalInfo> Database::getApprovalList(int statusFilter)
     }
     
     return approvals;
+}
+
+bool Database::fixAdminPermissions()
+{
+    QSqlQuery query;
+    QString adminPermissions = "登录权限/系统管理登录,登录权限/工作台登录";
+    
+    query.prepare("UPDATE roles SET permissions = ? WHERE id = 1");
+    query.addBindValue(adminPermissions);
+    
+    if (!query.exec()) {
+        qCritical() << "修复管理员权限失败:" << query.lastError().text();
+        return false;
+    }
+    
+    return true;
 } 

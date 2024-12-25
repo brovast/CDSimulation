@@ -16,3 +16,6 @@ find_package(Qt6 REQUIRED COMPONENTS
 
 # 源文件目录
 add_subdirectory(src) 
+
+set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_COMMAND} -E time")
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY ON) 

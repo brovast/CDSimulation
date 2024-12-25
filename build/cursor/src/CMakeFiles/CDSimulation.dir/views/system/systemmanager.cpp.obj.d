@@ -434,14 +434,20 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/usermanager.h \
  D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qobject.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QSettings \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qsettings.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QFileSystemModel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qfilesystemmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdir.h \

@@ -4,7 +4,7 @@
 项目名称: CDSimulation
 开发环境: Qt 6.7.3, C++, CMake, MinGW, SQLite3
 项目路径: D:\XMH_PROJECT\QT\CDSimulation
-数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\database.db
+数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\database\database.db
 默认账户: admin/admin
 终端：powershell
 平台支持：windows、linux

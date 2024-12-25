@@ -47,13 +47,36 @@ void Login::onLoginClicked()
             return;
         }
         
-        // 根据角色打开相应的主界面
-        if (roleId == 1) { // 管理员
+        // 获取用户权限
+        QList<Database::RoleInfo> roles = Database::getInstance().getRoleList();
+        QString permissions;
+        for (const auto& role : roles) {
+            if (role.id == roleId) {
+                permissions = role.permissions;
+                break;
+            }
+        }
+        
+        // 检查登录权限
+        bool canSystemLogin = permissions.contains("登录权限/系统管理登录");
+        bool canWorkbenchLogin = permissions.contains("登录权限/工作台登录");
+        bool isAdminLogin = ui->radioAdmin->isChecked();
+        
+        if (isAdminLogin && !canSystemLogin) {
+            QMessageBox::warning(this, "警告", "您没有系统管理登录权限！");
+            return;
+        }
+        
+        // 根据选择的登录方式打开相应界面
+        if (isAdminLogin && canSystemLogin) {
             SystemManager* systemManager = new SystemManager();
             systemManager->show();
-        } else { // 工程师
+        } else if (canWorkbenchLogin) {
             Workbench* workbench = new Workbench(userId);
             workbench->show();
+        } else {
+            QMessageBox::warning(this, "警告", "您没有登录权限！");
+            return;
         }
         
         // 隐藏登录界面

@@ -80,7 +80,7 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: s
 src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: src/CDSimulation_autogen/mocs_compilation.cpp
 src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\CDSimulation.dir\CDSimulation_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\CDSimulation.dir\CDSimulation_autogen\mocs_compilation.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\mocs_compilation.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\CDSimulation.dir\CDSimulation_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\CDSimulation.dir\CDSimulation_autogen\mocs_compilation.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\mocs_compilation.cpp
 
 src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.i"
@@ -95,7 +95,7 @@ src/CMakeFiles/CDSimulation.dir/main.cpp.obj: src/CMakeFiles/CDSimulation.dir/in
 src/CMakeFiles/CDSimulation.dir/main.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/main.cpp
 src/CMakeFiles/CDSimulation.dir/main.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/CDSimulation.dir/main.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/main.cpp.obj -MF CMakeFiles\CDSimulation.dir\main.cpp.obj.d -o CMakeFiles\CDSimulation.dir\main.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\main.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/main.cpp.obj -MF CMakeFiles\CDSimulation.dir\main.cpp.obj.d -o CMakeFiles\CDSimulation.dir\main.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\main.cpp
 
 src/CMakeFiles/CDSimulation.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/main.cpp.i"
@@ -110,7 +110,7 @@ src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj: src/CMakeFiles/CDSimulati
 src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/core/database.cpp
 src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj -MF CMakeFiles\CDSimulation.dir\core\database.cpp.obj.d -o CMakeFiles\CDSimulation.dir\core\database.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\core\database.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj -MF CMakeFiles\CDSimulation.dir\core\database.cpp.obj.d -o CMakeFiles\CDSimulation.dir\core\database.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\core\database.cpp
 
 src/CMakeFiles/CDSimulation.dir/core/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/core/database.cpp.i"
@@ -125,7 +125,7 @@ src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj: src/CMakeFiles/CDSimulation.d
 src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/core/user.cpp
 src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj -MF CMakeFiles\CDSimulation.dir\core\user.cpp.obj.d -o CMakeFiles\CDSimulation.dir\core\user.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\core\user.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj -MF CMakeFiles\CDSimulation.dir\core\user.cpp.obj.d -o CMakeFiles\CDSimulation.dir\core\user.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\core\user.cpp
 
 src/CMakeFiles/CDSimulation.dir/core/user.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/core/user.cpp.i"
@@ -140,7 +140,7 @@ src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj: src/CMakeFiles/CDSimulation
 src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/login.cpp
 src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\login.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\login.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\login.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\login.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\login.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\login.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/login.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/login.cpp.i"
@@ -155,7 +155,7 @@ src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj: src/CMakeFiles/CDSimulatio
 src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.cpp
 src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj -MF CMakeFiles\CDSimulation.dir\utils\config.cpp.obj.d -o CMakeFiles\CDSimulation.dir\utils\config.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\utils\config.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj -MF CMakeFiles\CDSimulation.dir\utils\config.cpp.obj.d -o CMakeFiles\CDSimulation.dir\utils\config.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\utils\config.cpp
 
 src/CMakeFiles/CDSimulation.dir/utils/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/utils/config.cpp.i"
@@ -170,7 +170,7 @@ src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj: src/CMakeFiles/CDSimulat
 src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/register.cpp
 src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\register.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\register.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\register.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\register.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\register.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\register.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/register.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/register.cpp.i"
@@ -185,7 +185,7 @@ src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj: src/CMakeFiles/CDSi
 src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.cpp
 src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\config_dialog.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\config_dialog.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\config_dialog.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\config_dialog.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\config_dialog.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\config_dialog.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.i"
@@ -200,7 +200,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: src/CMakeFil
 src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/systemmanager.cpp
 src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\systemmanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\systemmanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\systemmanager.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\systemmanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\systemmanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\systemmanager.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.i"
@@ -215,7 +215,7 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: src/CMakeFiles/CDSimula
 src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/workbench.cpp
 src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\workbench.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\workbench.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\workbench.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\workbench.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\workbench.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\workbench.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/workbench.cpp.i"
@@ -230,7 +230,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj: src/CMake
 src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/user_edit_dialog.cpp
 src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\user_edit_dialog.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\user_edit_dialog.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\user_edit_dialog.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\user_edit_dialog.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\user_edit_dialog.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\user_edit_dialog.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.i"
@@ -245,7 +245,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj: src/CMakeFiles
 src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/usermanager.cpp
 src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\usermanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\usermanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\usermanager.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\usermanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\usermanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\usermanager.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.i"
@@ -260,7 +260,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj: src/CMakeF
 src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.cpp
 src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\approvalmanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\approvalmanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\approvalmanager.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\approvalmanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\approvalmanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\approvalmanager.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.i"
@@ -275,7 +275,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: src/CMakeFiles
 src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.cpp
 src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj: src/CMakeFiles/CDSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\XMH_PROJECT\QT\CDSimulation\build\cursor\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj"
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\rolemanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\rolemanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\rolemanager.cpp
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src && D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe -E time D:\IndSoftware\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj -MF CMakeFiles\CDSimulation.dir\views\system\rolemanager.cpp.obj.d -o CMakeFiles\CDSimulation.dir\views\system\rolemanager.cpp.obj -c D:\XMH_PROJECT\QT\CDSimulation\src\views\system\rolemanager.cpp
 
 src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.i"

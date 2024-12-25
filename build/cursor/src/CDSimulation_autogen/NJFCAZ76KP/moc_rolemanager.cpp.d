@@ -1,5 +1,7 @@
 D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/NJFCAZ76KP/moc_rolemanager.cpp: D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
   D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/moc_predefs.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20functional.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20memory.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -46,11 +48,13 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/NJFCAZ76KP/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qhash.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qhashfunctions.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiodevicebase.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiterable.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiterator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qline.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlist.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlogging.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qmalloc.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qmap.h \
@@ -71,6 +75,7 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/NJFCAZ76KP/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qprocessordetection.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qrect.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qrefcount.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qscopedpointer.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qscopeguard.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qset.h \
@@ -143,10 +148,27 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/NJFCAZ76KP/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtguiglobal.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtransform.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

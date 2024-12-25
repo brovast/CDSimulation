@@ -12,6 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -33,6 +35,10 @@ public:
     QPushButton *btnRefresh;
     QSpacerItem *horizontalSpacer;
     QTableView *tableView;
+    QGroupBox *groupBoxEdit;
+    QFormLayout *formLayout;
+    QLabel *labelRole;
+    QComboBox *comboBoxRole;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *btnEdit;
     QPushButton *btnDelete;
@@ -80,6 +86,25 @@ public:
 
         verticalLayout->addWidget(tableView);
 
+        groupBoxEdit = new QGroupBox(UserManager);
+        groupBoxEdit->setObjectName("groupBoxEdit");
+        formLayout = new QFormLayout(groupBoxEdit);
+        formLayout->setObjectName("formLayout");
+        labelRole = new QLabel(groupBoxEdit);
+        labelRole->setObjectName("labelRole");
+
+        formLayout->setWidget(0, QFormLayout::LabelRole, labelRole);
+
+        comboBoxRole = new QComboBox(groupBoxEdit);
+        comboBoxRole->addItem(QString());
+        comboBoxRole->addItem(QString());
+        comboBoxRole->setObjectName("comboBoxRole");
+
+        formLayout->setWidget(0, QFormLayout::FieldRole, comboBoxRole);
+
+
+        verticalLayout->addWidget(groupBoxEdit);
+
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         btnEdit = new QPushButton(UserManager);
@@ -120,7 +145,12 @@ public:
         comboBoxStatus->setItemText(3, QCoreApplication::translate("UserManager", "\345\267\262\346\213\222\347\273\235", nullptr));
 
         btnRefresh->setText(QCoreApplication::translate("UserManager", "\345\210\267\346\226\260", nullptr));
-        btnEdit->setText(QCoreApplication::translate("UserManager", "\347\274\226\350\276\221", nullptr));
+        groupBoxEdit->setTitle(QCoreApplication::translate("UserManager", "\347\224\250\346\210\267\347\274\226\350\276\221", nullptr));
+        labelRole->setText(QCoreApplication::translate("UserManager", "\350\247\222\350\211\262\357\274\232", nullptr));
+        comboBoxRole->setItemText(0, QCoreApplication::translate("UserManager", "\345\267\245\347\250\213\345\270\210", nullptr));
+        comboBoxRole->setItemText(1, QCoreApplication::translate("UserManager", "\347\256\241\347\220\206\345\221\230", nullptr));
+
+        btnEdit->setText(QCoreApplication::translate("UserManager", "\344\277\256\346\224\271\350\247\222\350\211\262", nullptr));
         btnDelete->setText(QCoreApplication::translate("UserManager", "\345\210\240\351\231\244", nullptr));
         btnApprove->setText(QCoreApplication::translate("UserManager", "\345\256\241\346\211\271\351\200\232\350\277\207", nullptr));
         btnReject->setText(QCoreApplication::translate("UserManager", "\346\213\222\347\273\235", nullptr));

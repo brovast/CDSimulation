@@ -39,6 +39,9 @@ int main(int argc, char *argv[])
         qCritical() << "数据库初始化失败";
         return -1;
     }
+    
+    // 修复管理员权限
+    Database::getInstance().fixAdminPermissions();
 
     // 显示登录界面
     Login login;
