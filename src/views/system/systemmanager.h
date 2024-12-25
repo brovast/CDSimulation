@@ -47,6 +47,10 @@ private slots:
     void onDeleteBasicData();
     void onBasicDataItemClicked(const QModelIndex& index);
 
+    // 材料库相关槽函数
+    void onSelectCSVClicked();
+    void loadCSVData(const QString& filePath);
+
 private:
     // 初始化和加载相关
     void initUI();
@@ -68,4 +72,5 @@ private:
     Ui::SystemManager* ui;
     QFileSystemModel* m_basicDataModel;
     QString m_currentBasicDataPath;
+    QString m_currentMaterialCSVPath;  // 保存当前材料库CSV文件路径
 }; 

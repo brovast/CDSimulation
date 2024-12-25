@@ -32,7 +32,7 @@
           </property>
           <widget class="QWidget" name="tabBasicData">
            <attribute name="title">
-            <string>基础础数据库</string>
+            <string>基础数据库</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_basic">
             <item>
@@ -202,6 +202,36 @@
            <attribute name="title">
             <string>材料库</string>
            </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_material">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_csv">
+              <item>
+               <widget class="QLabel" name="labelCSVPath">
+                <property name="text">
+                 <string>CSV文件路径：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditCSVPath">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnSelectCSV">
+                <property name="text">
+                 <string>选择文件</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableMaterial"/>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="tabLoadData">
            <attribute name="title">

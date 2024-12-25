@@ -1,0 +1,177 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/qcustomplot_autogen",
+	"CMAKE_BINARY_DIR" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/XMH_PROJECT/QT/CDSimulation/src",
+	"CMAKE_EXECUTABLE" : "D:/IndSoftware/Qt/Tools/CMake_64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/XMH_PROJECT/QT/CDSimulation/src/CMakeLists.txt",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtFeature.cmake",
+		"D:/IndSoftware/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"D:/IndSoftware/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake",
+		"D:/IndSoftware/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-relwithdebinfo.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessTargets.cmake",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportPlugins.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/XMH_PROJECT/QT/CDSimulation",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/qcustomplot_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "qcustomplot_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/third_party/qcustomplot/qcustomplot.h",
+			"MU",
+			"6NRJOO7KY2/moc_qcustomplot.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/qcustomplot_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/qcustomplot_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_WIDGETS_LIB",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/include",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/mkspecs/win32-g++",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets",
+		"D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtPrintSupport",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"D:/IndSoftware/Qt/Tools/mingw1120_64/bin/g++.exe",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"D:/IndSoftware/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/qcustomplot_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_acoustic_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_modal_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_static_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_underwater_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_vibration_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_approvalmanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_structure_hierarchy_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_systemmanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_user_edit_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_usermanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_config_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_login.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_register.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_workbench.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/mocs_compilation.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CMakeFiles/qcustomplot_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "D:/IndSoftware/Qt/6.7.3/mingw_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/IndSoftware/Qt/6.7.3/mingw_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 7,
+	"SETTINGS_FILE" : "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CMakeFiles/qcustomplot_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/third_party/qcustomplot/qcustomplot.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_acoustic_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_modal_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_static_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_underwater_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/analysis/ui_vibration_analysis_module.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_approvalmanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_structure_hierarchy_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_systemmanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_user_edit_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/system/ui_usermanager.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_config_dialog.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_login.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_register.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/views/ui_workbench.h",
+		"D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/mocs_compilation.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

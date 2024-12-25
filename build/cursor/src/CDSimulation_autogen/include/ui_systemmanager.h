@@ -78,6 +78,12 @@ public:
     QPushButton *btnDelete;
     QWidget *tabUnderwaterData;
     QWidget *tabMaterialData;
+    QVBoxLayout *verticalLayout_material;
+    QHBoxLayout *horizontalLayout_csv;
+    QLabel *labelCSVPath;
+    QLineEdit *lineEditCSVPath;
+    QPushButton *btnSelectCSV;
+    QTableWidget *tableMaterial;
     QWidget *tabLoadData;
     QWidget *tabTaskManage;
     QVBoxLayout *verticalLayout_task;
@@ -314,6 +320,34 @@ public:
         tabWidgetDataManage->addTab(tabUnderwaterData, QString());
         tabMaterialData = new QWidget();
         tabMaterialData->setObjectName("tabMaterialData");
+        verticalLayout_material = new QVBoxLayout(tabMaterialData);
+        verticalLayout_material->setObjectName("verticalLayout_material");
+        horizontalLayout_csv = new QHBoxLayout();
+        horizontalLayout_csv->setObjectName("horizontalLayout_csv");
+        labelCSVPath = new QLabel(tabMaterialData);
+        labelCSVPath->setObjectName("labelCSVPath");
+
+        horizontalLayout_csv->addWidget(labelCSVPath);
+
+        lineEditCSVPath = new QLineEdit(tabMaterialData);
+        lineEditCSVPath->setObjectName("lineEditCSVPath");
+        lineEditCSVPath->setReadOnly(true);
+
+        horizontalLayout_csv->addWidget(lineEditCSVPath);
+
+        btnSelectCSV = new QPushButton(tabMaterialData);
+        btnSelectCSV->setObjectName("btnSelectCSV");
+
+        horizontalLayout_csv->addWidget(btnSelectCSV);
+
+
+        verticalLayout_material->addLayout(horizontalLayout_csv);
+
+        tableMaterial = new QTableWidget(tabMaterialData);
+        tableMaterial->setObjectName("tableMaterial");
+
+        verticalLayout_material->addWidget(tableMaterial);
+
         tabWidgetDataManage->addTab(tabMaterialData, QString());
         tabLoadData = new QWidget();
         tabLoadData->setObjectName("tabLoadData");
@@ -651,7 +685,7 @@ public:
         btnSelectBasicDataPath->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\350\267\257\345\276\204", nullptr));
         btnAddBasicFolder->setText(QCoreApplication::translate("SystemManager", "\346\267\273\345\212\240\346\226\207\344\273\266\345\244\271", nullptr));
         btnDeleteBasicData->setText(QCoreApplication::translate("SystemManager", "\345\210\240\351\231\244", nullptr));
-        tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabBasicData), QCoreApplication::translate("SystemManager", "\345\237\272\347\241\200\347\241\200\346\225\260\346\215\256\345\272\223", nullptr));
+        tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabBasicData), QCoreApplication::translate("SystemManager", "\345\237\272\347\241\200\346\225\260\346\215\256\345\272\223", nullptr));
         labelCDDataPath->setText(QCoreApplication::translate("SystemManager", "\346\225\260\346\215\256\350\267\257\345\276\204\357\274\232", nullptr));
         btnSelectCDDataPath->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\350\267\257\345\276\204", nullptr));
         btnNewModel->setText(QCoreApplication::translate("SystemManager", "\346\226\260\345\273\272\345\236\213\345\217\267", nullptr));
@@ -660,6 +694,8 @@ public:
         btnDelete->setText(QCoreApplication::translate("SystemManager", "\345\210\240\351\231\244", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabCompartmentData), QCoreApplication::translate("SystemManager", "\350\210\261\346\256\265\346\225\260\346\215\256\345\272\223", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabUnderwaterData), QCoreApplication::translate("SystemManager", "\346\260\264\344\270\213\344\273\277\347\234\237\345\272\223", nullptr));
+        labelCSVPath->setText(QCoreApplication::translate("SystemManager", "CSV\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
+        btnSelectCSV->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\346\226\207\344\273\266", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabMaterialData), QCoreApplication::translate("SystemManager", "\346\235\220\346\226\231\345\272\223", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabLoadData), QCoreApplication::translate("SystemManager", "\350\275\275\350\215\267\345\272\223", nullptr));
         tabWidgetMain->setTabText(tabWidgetMain->indexOf(tabDataManage), QCoreApplication::translate("SystemManager", "\346\225\260\346\215\256\347\256\241\347\220\206", nullptr));

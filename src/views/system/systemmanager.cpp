@@ -88,6 +88,13 @@ void SystemManager::initUI()
     // 设置工作目录
     QString defaultWorkDir = QDir(QCoreApplication::applicationDirPath()).filePath("tasks");
     ui->lineEditWorkDir->setText(defaultWorkDir);
+    
+    // 加载材料库CSV文件
+    m_currentMaterialCSVPath = Config::getInstance().getValue("MaterialCSV/Path").toString();
+    if (!m_currentMaterialCSVPath.isEmpty()) {
+        ui->lineEditCSVPath->setText(m_currentMaterialCSVPath);
+        loadCSVData(m_currentMaterialCSVPath);
+    }
 }
 
 void SystemManager::setupConnections()
@@ -113,7 +120,7 @@ void SystemManager::setupConnections()
     connect(ui->treeViewBasicData, &QTreeView::clicked, 
             this, &SystemManager::onBasicDataItemClicked);
 
-    // 添加舱段数据路径选择按钮的连接
+    // 添加舱段���据路径选择按钮的连接
     connect(ui->btnSelectCDDataPath, &QPushButton::clicked, this, [this]() {
         QString path = QFileDialog::getExistingDirectory(
             this,
@@ -143,6 +150,9 @@ void SystemManager::setupConnections()
             this, &SystemManager::onModelTypeChanged);
     connect(ui->btnTaskPublish, &QPushButton::clicked, this, &SystemManager::onTaskPublishClicked);
     connect(ui->btnTaskDelete, &QPushButton::clicked, this, &SystemManager::onTaskDeleteClicked);
+
+    // 添加材料库相关连接
+    connect(ui->btnSelectCSV, &QPushButton::clicked, this, &SystemManager::onSelectCSVClicked);
 }
 
 void SystemManager::loadBasicDataTree()
@@ -840,6 +850,63 @@ void SystemManager::onTaskDeleteClicked()
             QMessageBox::critical(this, "错误", "任务删除失败！");
         }
     }
+}
+
+// 添加新的函数实现
+void SystemManager::onSelectCSVClicked()
+{
+    QString filePath = QFileDialog::getOpenFileName(
+        this,
+        "选择CSV文件",
+        QString(),
+        "CSV文件 (*.csv)"
+    );
+    
+    if (!filePath.isEmpty()) {
+        m_currentMaterialCSVPath = filePath;
+        ui->lineEditCSVPath->setText(filePath);
+        loadCSVData(filePath);
+        
+        // 保存CSV文件路径到配置文件
+        Config::getInstance().setValue("MaterialCSV/Path", filePath);
+    }
+}
+
+void SystemManager::loadCSVData(const QString& filePath)
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::critical(this, "错误", "无法打开CSV文件！");
+        return;
+    }
+    
+    QTextStream in(&file);
+    
+    // 读取表头
+    QString headerLine = in.readLine();
+    QStringList headers = headerLine.split(",");
+    
+    ui->tableMaterial->clear();
+    ui->tableMaterial->setColumnCount(headers.size());
+    ui->tableMaterial->setHorizontalHeaderLabels(headers);
+    
+    // 读取数据
+    int row = 0;
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QStringList fields = line.split(",");
+        
+        ui->tableMaterial->insertRow(row);
+        for (int col = 0; col < fields.size(); ++col) {
+            ui->tableMaterial->setItem(row, col, new QTableWidgetItem(fields[col]));
+        }
+        row++;
+    }
+    
+    file.close();
+    
+    // 调整列宽以适应内容
+    ui->tableMaterial->resizeColumnsToContents();
 }
 
 // 其他槽函数的实现将在后续添加... 
