@@ -686,7 +686,7 @@ public:
         QTableWidgetItem *___qtablewidgetitem3 = tableTaskList->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QCoreApplication::translate("SystemManager", "\344\273\273\345\212\241\347\212\266\346\200\201", nullptr));
         QTableWidgetItem *___qtablewidgetitem4 = tableTaskList->horizontalHeaderItem(4);
-        ___qtablewidgetitem4->setText(QCoreApplication::translate("SystemManager", "\346\214\207\357\277\275\357\277\275\357\277\275\344\272\272\345\221\230", nullptr));
+        ___qtablewidgetitem4->setText(QCoreApplication::translate("SystemManager", "\346\214\207\346\264\276\344\272\272\345\221\230", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableTaskList->horizontalHeaderItem(5);
         ___qtablewidgetitem5->setText(QCoreApplication::translate("SystemManager", "\345\210\233\345\273\272\346\227\266\351\227\264", nullptr));
         groupBoxBasicInfo->setTitle(QCoreApplication::translate("SystemManager", "\345\237\272\346\234\254\344\277\241\346\201\257", nullptr));

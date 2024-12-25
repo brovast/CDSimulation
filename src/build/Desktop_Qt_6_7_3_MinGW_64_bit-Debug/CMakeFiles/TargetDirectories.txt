@@ -1,3 +1,0 @@
-D:/XMH_PROJECT/QT/CDSimulation/src/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/CMakeFiles/Project.dir
-D:/XMH_PROJECT/QT/CDSimulation/src/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-D:/XMH_PROJECT/QT/CDSimulation/src/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir

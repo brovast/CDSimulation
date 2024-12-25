@@ -58,6 +58,8 @@
 ## 文件结构规范
 database/
 ├── basicdata/     # 基础数据
+├── materialdata/  # 材料数据
+├── loaddata/      # 载荷数据
 └── cddata/        # 舱段数据
     └── {型号}/
         ├── 舱段壳体/
