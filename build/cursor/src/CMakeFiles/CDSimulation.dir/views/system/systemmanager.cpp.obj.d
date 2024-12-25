@@ -1,8 +1,8 @@
 src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\system\systemmanager.cpp \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\system\systemmanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmainwindow.h \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\system\structure_hierarchy_dialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QDialog \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtguiglobal.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qglobal.h \
@@ -361,31 +361,8 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qcursor.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qbitmap.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/ui_systemmanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QVariant \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qvariant.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QApplication \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qapplication.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreevent.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qelapsedtimer.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qeventloop.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qnativeinterface.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHeaderView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qheaderview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
@@ -393,6 +370,7 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
@@ -400,59 +378,14 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlabel.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpicture.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiodevice.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextdocument.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qurl.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMenuBar \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmenubar.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmenu.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QStatusBar \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstatusbar.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTabWidget \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTextEdit \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtextedit.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextoption.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextcursor.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextformat.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpen.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/system/usermanager.h \
- D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qobject.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QSettings \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qsettings.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QFileSystemModel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qfilesystemmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdir.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfile.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfiledevice.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiodevice.h \
  D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem \
  D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h \
  D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h \
@@ -488,7 +421,122 @@ src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcalendar.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qtimezone.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdiriterator.h \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\system\systemmanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmainwindow.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlabel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpicture.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextdocument.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qurl.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTextEdit \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtextedit.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextoption.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextcursor.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextformat.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpen.h \
+ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/ui_systemmanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QVariant \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qvariant.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QApplication \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qapplication.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreevent.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qelapsedtimer.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qeventloop.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qinputmethod.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QCheckBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QComboBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QFormLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qformlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHeaderView \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qheaderview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLineEdit \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlineedit.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMenuBar \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmenubar.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmenu.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QSpacerItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QSplitter \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsplitter.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QStatusBar \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstatusbar.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTabWidget \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTextEdit \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QStringList \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/system/usermanager.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qobject.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QSettings \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qsettings.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/core/database.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/QSqlDatabase \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qsqldatabase.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlglobal.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsql-config.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlexports.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDateTime \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatetime.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QFileDialog \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qfiledialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QInputDialog \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qinputdialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlineedit.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QTextStream \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qtextstream.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QPixmap \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpixmap.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDir \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdir.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QFileInfo \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfileinfo.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QRegularExpression \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h

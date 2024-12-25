@@ -1,0 +1,7 @@
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CMakeFiles/CDSimulation.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CMakeFiles/edit_cache.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CMakeFiles/rebuild_cache.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CMakeFiles/CDSimulation_autogen_timestamp_deps.dir
+D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CMakeFiles/CDSimulation_autogen.dir

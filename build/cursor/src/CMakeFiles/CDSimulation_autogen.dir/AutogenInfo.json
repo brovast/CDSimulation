@@ -31,6 +31,42 @@
 			null
 		],
 		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_acoustic_analysis_module.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h",
+			"MU",
+			"G7HMF6KTAH/moc_analysis_module_base.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_modal_analysis_module.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_static_analysis_module.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_underwater_analysis_module.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_vibration_analysis_module.cpp",
+			null
+		],
+		[
 			"D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.h",
 			"MU",
 			"DWW7M6GQBY/moc_config_dialog.cpp",
@@ -58,6 +94,12 @@
 			"D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h",
 			"MU",
 			"NJFCAZ76KP/moc_rolemanager.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/system/structure_hierarchy_dialog.h",
+			"MU",
+			"NJFCAZ76KP/moc_structure_hierarchy_dialog.cpp",
 			null
 		],
 		[
@@ -114,6 +156,7 @@
 		"D:/XMH_PROJECT/QT/CDSimulation/src",
 		"D:/XMH_PROJECT/QT/CDSimulation/src/views",
 		"D:/XMH_PROJECT/QT/CDSimulation/src/views/system",
+		"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis",
 		"D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore",
 		"D:/IndSoftware/Qt/6.7.3/mingw_64/include",
 		"D:/IndSoftware/Qt/6.7.3/mingw_64/mkspecs/win32-g++",
@@ -165,6 +208,36 @@
 		[ "D:/XMH_PROJECT/QT/CDSimulation/src/main.cpp", "MU", null ],
 		[ "D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.cpp", "MU", null ],
 		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.cpp",
+			"MU",
+			null
+		],
+		[
 			"D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.cpp",
 			"MU",
 			null
@@ -178,6 +251,11 @@
 		],
 		[
 			"D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/system/structure_hierarchy_dialog.cpp",
 			"MU",
 			null
 		],

@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <customwidgets>
-  <customwidget>
-   <class>UserManager</class>
-   <extends>QWidget</extends>
-   <header>views/system/usermanager.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>RoleManager</class>
-   <extends>QWidget</extends>
-   <header>views/system/rolemanager.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>ApprovalManager</class>
-   <extends>QWidget</extends>
-   <header>views/system/approvalmanager.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <class>SystemManager</class>
  <widget class="QMainWindow" name="SystemManager">
   <property name="geometry">
@@ -27,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1200</width>
-    <height>800</height>
+    <height>934</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,7 +17,9 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QTabWidget" name="tabWidgetMain">
-      <!-- 数据管理标签页 -->
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
       <widget class="QWidget" name="tabDataManage">
        <attribute name="title">
         <string>数据管理</string>
@@ -45,91 +27,85 @@
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
          <widget class="QTabWidget" name="tabWidgetDataManage">
-          <!-- 基础数据标签页 -->
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
           <widget class="QWidget" name="tabBasicData">
            <attribute name="title">
-            <string>基础数据库</string>
+            <string>基础础数据库</string>
            </attribute>
-           <layout class="QHBoxLayout" name="horizontalLayout">
+           <layout class="QVBoxLayout" name="verticalLayout_basic">
             <item>
-             <widget class="QTreeView" name="treeViewBasicData"/>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3">
+             <layout class="QHBoxLayout" name="horizontalLayout_path">
               <item>
-               <widget class="QLabel" name="labelImagePreview">
-                <property name="minimumSize">
-                 <size>
-                  <width>400</width>
-                  <height>300</height>
-                 </size>
-                </property>
+               <widget class="QLabel" name="labelBasicDataPath">
                 <property name="text">
-                 <string>图片预览</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                 <string>数据路径：</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QTextEdit" name="textEditContentPreview">
-                <property name="minimumSize">
-                 <size>
-                  <width>400</width>
-                  <height>200</height>
-                 </size>
-                </property>
+               <widget class="QLineEdit" name="lineEditBasicDataPath">
                 <property name="readOnly">
                  <bool>true</bool>
                 </property>
                </widget>
               </item>
+              <item>
+               <widget class="QPushButton" name="btnSelectBasicDataPath">
+                <property name="text">
+                 <string>选择路径</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </item>
-           </layout>
-          </widget>
-          <!-- 舱段数据标签页 -->
-          <widget class="QWidget" name="tabCompartmentData">
-           <attribute name="title">
-            <string>舱段数据库</string>
-           </attribute>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
-             <widget class="QTreeView" name="treeViewCDBasicData"/>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_4">
+             <layout class="QHBoxLayout" name="horizontalLayout_content">
               <item>
-               <widget class="QTreeView" name="treeViewCDData"/>
+               <layout class="QVBoxLayout" name="verticalLayout_tree">
+                <item>
+                 <widget class="QTreeView" name="treeViewBasicData"/>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+                  <item>
+                   <widget class="QPushButton" name="btnAddBasicFolder">
+                    <property name="text">
+                     <string>添加文件夹</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnDeleteBasicData">
+                    <property name="text">
+                     <string>删除</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <layout class="QVBoxLayout" name="verticalLayout_preview">
                 <item>
-                 <widget class="QPushButton" name="btnNewModel">
-                  <property name="text">
-                   <string>新建型号</string>
+                 <widget class="QLabel" name="labelImagePreview">
+                  <property name="minimumSize">
+                   <size>
+                    <width>400</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btnAddStructureType">
-                  <property name="text">
-                   <string>添加结构类型</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btnCopyData">
-                  <property name="text">
-                   <string>数据复制</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btnDelete">
-                  <property name="text">
-                   <string>删除</string>
+                 <widget class="QTextEdit" name="textEditContentPreview">
+                  <property name="readOnly">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -139,18 +115,477 @@
             </item>
            </layout>
           </widget>
+          <widget class="QWidget" name="tabCompartmentData">
+           <attribute name="title">
+            <string>舱段数据库</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_cd">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_cdpath">
+              <item>
+               <widget class="QLabel" name="labelCDDataPath">
+                <property name="text">
+                 <string>数据路径：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditCDDataPath">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnSelectCDDataPath">
+                <property name="text">
+                 <string>选择路径</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QTreeView" name="treeViewCDBasicData"/>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QTreeView" name="treeViewCDData"/>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QPushButton" name="btnNewModel">
+                    <property name="text">
+                     <string>新建型号</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnAddStructureType">
+                    <property name="text">
+                     <string>结构层级维护</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnCopyData">
+                    <property name="text">
+                     <string>数据复制</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnDelete">
+                    <property name="text">
+                     <string>删除</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabUnderwaterData">
+           <attribute name="title">
+            <string>水下仿真库</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tabMaterialData">
+           <attribute name="title">
+            <string>材料库</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tabLoadData">
+           <attribute name="title">
+            <string>载荷库</string>
+           </attribute>
+          </widget>
          </widget>
         </item>
        </layout>
       </widget>
-      <!-- 任务管理标签页 -->
       <widget class="QWidget" name="tabTaskManage">
        <attribute name="title">
         <string>任务管理</string>
        </attribute>
-       <!-- 任务管理界面的具体实现将在后续添加 -->
+       <layout class="QVBoxLayout" name="verticalLayout_task">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_filter">
+          <item>
+           <widget class="QLabel" name="labelStatus">
+            <property name="text">
+             <string>状态：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxStatusFilter">
+            <item>
+             <property name="text">
+              <string>全部</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>待处理</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>进行中</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>已完成</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>已取消</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelType">
+            <property name="text">
+             <string>类型：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxTypeFilter">
+            <item>
+             <property name="text">
+              <string>全部</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>模态分析</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>静力学分析</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>振动分析</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditSearch">
+            <property name="placeholderText">
+             <string>搜索任务...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_task">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableTaskList">
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>任务ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>任务名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>任务类型</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>任务状态</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>指���人员</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>创建时间</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSplitter" name="splitterTask">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <widget class="QWidget" name="widgetTaskDefine">
+           <layout class="QVBoxLayout" name="verticalLayout_taskDefine">
+            <item>
+             <widget class="QGroupBox" name="groupBoxBasicInfo">
+              <property name="title">
+               <string>基本信息</string>
+              </property>
+              <layout class="QFormLayout" name="formLayout_basic">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelTaskName">
+                 <property name="text">
+                  <string>任务名称：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEditTaskName"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelWorkDir">
+                 <property name="text">
+                  <string>工作目录：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_workDir">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditWorkDir">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSelectWorkDir">
+                   <property name="text">
+                    <string>选择目录</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="labelTaskDesc">
+                 <property name="text">
+                  <string>任务描述：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QTextEdit" name="textEditTaskDescription"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBoxModel">
+              <property name="title">
+               <string>舱段模型</string>
+              </property>
+              <layout class="QFormLayout" name="formLayout_model">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelModelType">
+                 <property name="text">
+                  <string>型号选择：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBoxModelSelect"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelModelPath">
+                 <property name="text">
+                  <string>模型路径：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEditModelPath">
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBoxAnalysisType">
+              <property name="title">
+               <string>分析类型</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_analysis">
+               <item>
+                <widget class="QGroupBox" name="groupBoxModal">
+                 <property name="title">
+                  <string>模态分析</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_modal">
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxDryModalAnalysis">
+                    <property name="text">
+                     <string>干模态分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxWetModalAnalysis">
+                    <property name="text">
+                     <string>湿模态分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBoxStatic">
+                 <property name="title">
+                  <string>静力学分析</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_static">
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxShellStrengthAnalysis">
+                    <property name="text">
+                     <string>壳体强度分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxValveFrameStrengthAnalysis">
+                    <property name="text">
+                     <string>阀架强度分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBoxVibration">
+                 <property name="title">
+                  <string>振动分析</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_vibration">
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxSingleSideExcitationAnalysis">
+                    <property name="text">
+                     <string>单舷激励分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="checkBoxDoubleSideExcitationAnalysis">
+                    <property name="text">
+                     <string>双舷激励分析</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBoxAssign">
+              <property name="title">
+               <string>任务指派</string>
+              </property>
+              <layout class="QFormLayout" name="formLayout_assign">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelAssignTo">
+                 <property name="text">
+                  <string>指派给：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBoxUserSelect"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelAssignDesc">
+                 <property name="text">
+                  <string>指派说明：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEditAssignDescription"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+              <item>
+               <spacer name="horizontalSpacer_buttons">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnTaskPublish">
+                <property name="text">
+                 <string>发布任务</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnTaskDelete">
+                <property name="text">
+                 <string>删除任务</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
       </widget>
-      <!-- 系统管理标签页 -->
       <widget class="QWidget" name="tabSystemManage">
        <attribute name="title">
         <string>系统管理</string>
@@ -158,7 +593,6 @@
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
          <widget class="QTabWidget" name="tabWidgetSystemManage">
-          <!-- 用户管理标签页 -->
           <widget class="QWidget" name="tabUserManage">
            <attribute name="title">
             <string>用户管理</string>
@@ -169,7 +603,6 @@
             </item>
            </layout>
           </widget>
-          <!-- 角色管理标签页 -->
           <widget class="QWidget" name="tabRoleManage">
            <attribute name="title">
             <string>角色管理</string>
@@ -180,7 +613,6 @@
             </item>
            </layout>
           </widget>
-          <!-- 审批管理标签页 -->
           <widget class="QWidget" name="tabApprovalManage">
            <attribute name="title">
             <string>审批管理</string>
@@ -205,12 +637,32 @@
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>UserManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/usermanager.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RoleManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/rolemanager.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ApprovalManager</class>
+   <extends>QWidget</extends>
+   <header>views/system/approvalmanager.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
-</ui> 
+</ui>

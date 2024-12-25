@@ -8,7 +8,7 @@
 项目根目录: D:\XMH_PROJECT\QT\CDSimulation
 
 ## 数据库位置
-sqlite3数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\database\database.db
+sqlite3数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\database.db
 超级管理员: admin 密码: admin
 数据文件夹: exe同级目录下的database文件夹
 
@@ -256,17 +256,8 @@ project/
           FOREIGN KEY(analysis_type_id) REFERENCES analysis_types(id)
       );
 
-    - 文件系统结构：
-      tasks/                                     -- 任务根目录
-      ├── {task_id}/                            -- 任务工作目录
-      │   ├── model/                            -- 模型文件目录（从cddata复制）
-      │   ├── analysis/                         -- 分析工作目录
-      │   │   ├── modal/                        -- 模态分析
-      │   │   ├── static/                       -- 静力学分析
-      │   │   ├── vibration/                    -- 振动分析
-      │   │   └── frequency/                    -- 源频特性分析
-      │   └── results/                          -- 结果文件目录
-      └── templates/                            -- 分析参数模板目录
+jm
+
 
     - 业务流程：
       1. 创建任务流程

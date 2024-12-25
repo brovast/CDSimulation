@@ -4,7 +4,7 @@
 项目名称: CDSimulation
 开发环境: Qt 6.7.3, C++, CMake, MinGW, SQLite3
 项目路径: D:\XMH_PROJECT\QT\CDSimulation
-数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\database\database.db
+数据库: D:\XMH_PROJECT\QT\CDSimulation\build\cursor\database.db
 默认账户: admin/admin
 终端：powershell
 平台支持：windows、linux
@@ -71,16 +71,20 @@ database/
         ├── 阀门/
         └── 其它结构/
 
-tasks/
-├── {task_id}/
-│   ├── model/
-│   ├── analysis/
-│   │   ├── modal/
-│   │   ├── static/
-│   │   ├── vibration/
-│   │   └── frequency/
-│   └── results/
-└── templates/
+## 文件系统结构
+tasks/                                     -- 任务根目录
+└── username+taskname/                     -- 任务工作目录
+    ├── model/                            -- 模型文件目录（从cddata复制）
+    ├── drymodal/                         -- 干模态分析
+    │   └── results/                      -- 干模态分析结果目录
+    ├── wetmodal/                         -- 湿模态分析
+    │   └── results/                      -- 湿模态分析结果目录
+    ├── static/                           -- 静力学分析
+    │   └── results/                      -- 静力学分析结果目录
+    ├── vibration/                        -- 振动分析
+    │   └── results/                      -- 振动分析结果目录
+    └── acoustics/                        -- 声学分析
+        └── results/                      -- 声学分析结果目录
 
 ## 权限规范
 ### 管理员权限

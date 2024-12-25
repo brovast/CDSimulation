@@ -82,5 +82,47 @@
   "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\rolemanager.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\rolemanager.cpp",
   "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.cpp",
   "output": "src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\system\\structure_hierarchy_dialog.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\system\\structure_hierarchy_dialog.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/system/structure_hierarchy_dialog.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/system/structure_hierarchy_dialog.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\analysis_module_base.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\analysis_module_base.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\modal_analysis_module.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\modal_analysis_module.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\static_analysis_module.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\static_analysis_module.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/static_analysis_module.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\vibration_analysis_module.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\vibration_analysis_module.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\acoustic_analysis_module.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\acoustic_analysis_module.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.obj"
+},
+{
+  "directory": "D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src",
+  "command": "D:\\IndSoftware\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/CDSimulation.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CDSimulation.dir\\views\\analysis\\underwater_analysis_module.cpp.obj -c D:\\XMH_PROJECT\\QT\\CDSimulation\\src\\views\\analysis\\underwater_analysis_module.cpp",
+  "file": "D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.cpp",
+  "output": "src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.obj"
 }
 ]

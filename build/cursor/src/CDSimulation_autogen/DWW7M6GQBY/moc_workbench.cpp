@@ -36,13 +36,13 @@ namespace {
 struct qt_meta_stringdata_CLASSWorkbenchENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSWorkbenchENDCLASS = QtMocHelpers::stringData(
     "Workbench",
-    "onTaskDoubleClicked",
+    "onTaskFilterChanged",
     "",
-    "QModelIndex",
-    "index",
-    "onTaskStatusChanged",
-    "status",
-    "onRefreshClicked"
+    "onTaskSearch",
+    "text",
+    "onTaskSelectionChanged",
+    "onAcceptTaskClicked",
+    "onCompleteTaskClicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -55,7 +55,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSWorkbenchENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,13 +63,17 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSWorkbenchENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x08,    1 /* Private */,
-       5,    1,   35,    2, 0x08,    3 /* Private */,
-       7,    0,   38,    2, 0x08,    5 /* Private */,
+       1,    0,   44,    2, 0x08,    1 /* Private */,
+       3,    1,   45,    2, 0x08,    2 /* Private */,
+       5,    0,   48,    2, 0x08,    4 /* Private */,
+       6,    0,   49,    2, 0x08,    5 /* Private */,
+       7,    0,   50,    2, 0x08,    6 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -84,13 +88,16 @@ Q_CONSTINIT const QMetaObject Workbench::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSWorkbenchENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Workbench, std::true_type>,
-        // method 'onTaskDoubleClicked'
+        // method 'onTaskFilterChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>,
-        // method 'onTaskStatusChanged'
+        // method 'onTaskSearch'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'onRefreshClicked'
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'onTaskSelectionChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onAcceptTaskClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onCompleteTaskClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -102,9 +109,11 @@ void Workbench::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<Workbench *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onTaskDoubleClicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
-        case 1: _t->onTaskStatusChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 2: _t->onRefreshClicked(); break;
+        case 0: _t->onTaskFilterChanged(); break;
+        case 1: _t->onTaskSearch((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->onTaskSelectionChanged(); break;
+        case 3: _t->onAcceptTaskClicked(); break;
+        case 4: _t->onCompleteTaskClicked(); break;
         default: ;
         }
     }
@@ -129,13 +138,13 @@ int Workbench::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

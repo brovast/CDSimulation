@@ -277,6 +277,150 @@ utils/config.cpp.s:
 	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/utils/config.cpp.s
 .PHONY : utils/config.cpp.s
 
+views/analysis/acoustic_analysis_module.obj: views/analysis/acoustic_analysis_module.cpp.obj
+.PHONY : views/analysis/acoustic_analysis_module.obj
+
+# target to build an object file
+views/analysis/acoustic_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.obj
+.PHONY : views/analysis/acoustic_analysis_module.cpp.obj
+
+views/analysis/acoustic_analysis_module.i: views/analysis/acoustic_analysis_module.cpp.i
+.PHONY : views/analysis/acoustic_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/acoustic_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.i
+.PHONY : views/analysis/acoustic_analysis_module.cpp.i
+
+views/analysis/acoustic_analysis_module.s: views/analysis/acoustic_analysis_module.cpp.s
+.PHONY : views/analysis/acoustic_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/acoustic_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.s
+.PHONY : views/analysis/acoustic_analysis_module.cpp.s
+
+views/analysis/analysis_module_base.obj: views/analysis/analysis_module_base.cpp.obj
+.PHONY : views/analysis/analysis_module_base.obj
+
+# target to build an object file
+views/analysis/analysis_module_base.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.obj
+.PHONY : views/analysis/analysis_module_base.cpp.obj
+
+views/analysis/analysis_module_base.i: views/analysis/analysis_module_base.cpp.i
+.PHONY : views/analysis/analysis_module_base.i
+
+# target to preprocess a source file
+views/analysis/analysis_module_base.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.i
+.PHONY : views/analysis/analysis_module_base.cpp.i
+
+views/analysis/analysis_module_base.s: views/analysis/analysis_module_base.cpp.s
+.PHONY : views/analysis/analysis_module_base.s
+
+# target to generate assembly for a file
+views/analysis/analysis_module_base.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.s
+.PHONY : views/analysis/analysis_module_base.cpp.s
+
+views/analysis/modal_analysis_module.obj: views/analysis/modal_analysis_module.cpp.obj
+.PHONY : views/analysis/modal_analysis_module.obj
+
+# target to build an object file
+views/analysis/modal_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.obj
+.PHONY : views/analysis/modal_analysis_module.cpp.obj
+
+views/analysis/modal_analysis_module.i: views/analysis/modal_analysis_module.cpp.i
+.PHONY : views/analysis/modal_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/modal_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.i
+.PHONY : views/analysis/modal_analysis_module.cpp.i
+
+views/analysis/modal_analysis_module.s: views/analysis/modal_analysis_module.cpp.s
+.PHONY : views/analysis/modal_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/modal_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.s
+.PHONY : views/analysis/modal_analysis_module.cpp.s
+
+views/analysis/static_analysis_module.obj: views/analysis/static_analysis_module.cpp.obj
+.PHONY : views/analysis/static_analysis_module.obj
+
+# target to build an object file
+views/analysis/static_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/static_analysis_module.cpp.obj
+.PHONY : views/analysis/static_analysis_module.cpp.obj
+
+views/analysis/static_analysis_module.i: views/analysis/static_analysis_module.cpp.i
+.PHONY : views/analysis/static_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/static_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/static_analysis_module.cpp.i
+.PHONY : views/analysis/static_analysis_module.cpp.i
+
+views/analysis/static_analysis_module.s: views/analysis/static_analysis_module.cpp.s
+.PHONY : views/analysis/static_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/static_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/static_analysis_module.cpp.s
+.PHONY : views/analysis/static_analysis_module.cpp.s
+
+views/analysis/underwater_analysis_module.obj: views/analysis/underwater_analysis_module.cpp.obj
+.PHONY : views/analysis/underwater_analysis_module.obj
+
+# target to build an object file
+views/analysis/underwater_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.obj
+.PHONY : views/analysis/underwater_analysis_module.cpp.obj
+
+views/analysis/underwater_analysis_module.i: views/analysis/underwater_analysis_module.cpp.i
+.PHONY : views/analysis/underwater_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/underwater_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.i
+.PHONY : views/analysis/underwater_analysis_module.cpp.i
+
+views/analysis/underwater_analysis_module.s: views/analysis/underwater_analysis_module.cpp.s
+.PHONY : views/analysis/underwater_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/underwater_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.s
+.PHONY : views/analysis/underwater_analysis_module.cpp.s
+
+views/analysis/vibration_analysis_module.obj: views/analysis/vibration_analysis_module.cpp.obj
+.PHONY : views/analysis/vibration_analysis_module.obj
+
+# target to build an object file
+views/analysis/vibration_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.obj
+.PHONY : views/analysis/vibration_analysis_module.cpp.obj
+
+views/analysis/vibration_analysis_module.i: views/analysis/vibration_analysis_module.cpp.i
+.PHONY : views/analysis/vibration_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/vibration_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.i
+.PHONY : views/analysis/vibration_analysis_module.cpp.i
+
+views/analysis/vibration_analysis_module.s: views/analysis/vibration_analysis_module.cpp.s
+.PHONY : views/analysis/vibration_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/vibration_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.s
+.PHONY : views/analysis/vibration_analysis_module.cpp.s
+
 views/config_dialog.obj: views/config_dialog.cpp.obj
 .PHONY : views/config_dialog.obj
 
@@ -396,6 +540,30 @@ views/system/rolemanager.s: views/system/rolemanager.cpp.s
 views/system/rolemanager.cpp.s:
 	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.s
 .PHONY : views/system/rolemanager.cpp.s
+
+views/system/structure_hierarchy_dialog.obj: views/system/structure_hierarchy_dialog.cpp.obj
+.PHONY : views/system/structure_hierarchy_dialog.obj
+
+# target to build an object file
+views/system/structure_hierarchy_dialog.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/system/structure_hierarchy_dialog.cpp.obj
+.PHONY : views/system/structure_hierarchy_dialog.cpp.obj
+
+views/system/structure_hierarchy_dialog.i: views/system/structure_hierarchy_dialog.cpp.i
+.PHONY : views/system/structure_hierarchy_dialog.i
+
+# target to preprocess a source file
+views/system/structure_hierarchy_dialog.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/system/structure_hierarchy_dialog.cpp.i
+.PHONY : views/system/structure_hierarchy_dialog.cpp.i
+
+views/system/structure_hierarchy_dialog.s: views/system/structure_hierarchy_dialog.cpp.s
+.PHONY : views/system/structure_hierarchy_dialog.s
+
+# target to generate assembly for a file
+views/system/structure_hierarchy_dialog.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/system/structure_hierarchy_dialog.cpp.s
+.PHONY : views/system/structure_hierarchy_dialog.cpp.s
 
 views/system/systemmanager.obj: views/system/systemmanager.cpp.obj
 .PHONY : views/system/systemmanager.obj
@@ -519,6 +687,24 @@ help:
 	@echo ... utils/config.obj
 	@echo ... utils/config.i
 	@echo ... utils/config.s
+	@echo ... views/analysis/acoustic_analysis_module.obj
+	@echo ... views/analysis/acoustic_analysis_module.i
+	@echo ... views/analysis/acoustic_analysis_module.s
+	@echo ... views/analysis/analysis_module_base.obj
+	@echo ... views/analysis/analysis_module_base.i
+	@echo ... views/analysis/analysis_module_base.s
+	@echo ... views/analysis/modal_analysis_module.obj
+	@echo ... views/analysis/modal_analysis_module.i
+	@echo ... views/analysis/modal_analysis_module.s
+	@echo ... views/analysis/static_analysis_module.obj
+	@echo ... views/analysis/static_analysis_module.i
+	@echo ... views/analysis/static_analysis_module.s
+	@echo ... views/analysis/underwater_analysis_module.obj
+	@echo ... views/analysis/underwater_analysis_module.i
+	@echo ... views/analysis/underwater_analysis_module.s
+	@echo ... views/analysis/vibration_analysis_module.obj
+	@echo ... views/analysis/vibration_analysis_module.i
+	@echo ... views/analysis/vibration_analysis_module.s
 	@echo ... views/config_dialog.obj
 	@echo ... views/config_dialog.i
 	@echo ... views/config_dialog.s
@@ -534,6 +720,9 @@ help:
 	@echo ... views/system/rolemanager.obj
 	@echo ... views/system/rolemanager.i
 	@echo ... views/system/rolemanager.s
+	@echo ... views/system/structure_hierarchy_dialog.obj
+	@echo ... views/system/structure_hierarchy_dialog.i
+	@echo ... views/system/structure_hierarchy_dialog.s
 	@echo ... views/system/systemmanager.obj
 	@echo ... views/system/systemmanager.i
 	@echo ... views/system/systemmanager.s

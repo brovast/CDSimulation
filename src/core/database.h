@@ -39,6 +39,27 @@ public:
         QDateTime approveTime;
     };
 
+    struct TaskInfo {
+        int id;
+        QString name;
+        QString description;
+        QString workDir;
+        QString modelPath;
+        QString modelType;
+        int assignedTo;
+        QString assignDescription;
+        int status;
+        int createdBy;
+        QDateTime createTime;
+        QDateTime updateTime;
+    };
+
+    struct TaskAnalysisType {
+        int taskId;
+        QString analysisType;
+        QString parameters;
+    };
+
     QList<UserInfo> getUserList(int statusFilter = -1);
     bool updateUserStatus(int userId, int status, int approverId);
     bool deleteUser(int userId);
@@ -54,6 +75,13 @@ public:
     QList<ApprovalInfo> getApprovalList(int statusFilter = -1);
     
     bool fixAdminPermissions();
+
+    QList<TaskInfo> getTaskList(int statusFilter = -1, const QString& typeFilter = QString());
+    bool addTask(const TaskInfo& task, const QList<TaskAnalysisType>& analysisTypes);
+    bool updateTaskStatus(int taskId, int status);
+    bool deleteTask(int taskId);
+    bool getTaskInfo(int taskId, TaskInfo& taskInfo);
+    QList<TaskAnalysisType> getTaskAnalysisTypes(int taskId);
 
 private:
     bool initDefaultAdmin();

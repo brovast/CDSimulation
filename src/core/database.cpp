@@ -127,6 +127,37 @@ bool Database::createTables()
         return false;
     }
     
+    // 创建任务表
+    if (!query.exec("CREATE TABLE IF NOT EXISTS tasks ("
+                   "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                   "name TEXT NOT NULL,"                    // 任务名称
+                   "description TEXT,"                      // 任务描述
+                   "work_dir TEXT,"                        // 工作目录
+                   "model_path TEXT,"                      // 模型路径
+                   "model_type TEXT,"                      // 型号
+                   "assigned_to INTEGER,"                  // 指派人员
+                   "assign_description TEXT,"              // 指派说明
+                   "status INTEGER DEFAULT 0,"             // 状态(0:待处理 1:进行中 2:已完成 3:已取消)
+                   "created_by INTEGER,"                   // 创建人
+                   "create_time DATETIME,"                 // 创建时间
+                   "update_time DATETIME,"                 // 更新时间
+                   "FOREIGN KEY(assigned_to) REFERENCES users(id),"
+                   "FOREIGN KEY(created_by) REFERENCES users(id))")) {
+        qCritical() << "创建任务表失败:" << query.lastError().text();
+        return false;
+    }
+    
+    // 创建任务分析类型关联表
+    if (!query.exec("CREATE TABLE IF NOT EXISTS task_analysis_types ("
+                   "task_id INTEGER,"
+                   "analysis_type TEXT,"                   // 分析类型
+                   "parameters TEXT,"                      // 分析参数(JSON格式)
+                   "PRIMARY KEY (task_id, analysis_type),"
+                   "FOREIGN KEY(task_id) REFERENCES tasks(id))")) {
+        qCritical() << "创建任务分析类型表失败:" << query.lastError().text();
+        return false;
+    }
+    
     return true;
 }
 
@@ -180,7 +211,7 @@ QList<Database::UserInfo> Database::getUserList(int statusFilter)
             users.append(user);
         }
     } else {
-        qCritical() << "获取用户列表失败:" << query.lastError().text();
+        qCritical() << "获取用户列表���败:" << query.lastError().text();
     }
     
     return users;
@@ -228,7 +259,7 @@ bool Database::deleteUser(int userId)
     query.addBindValue(userId);
     
     if (!query.exec()) {
-        qCritical() << "删除用户失败:" << query.lastError().text();
+        qCritical() << "删除用户��败:" << query.lastError().text();
         return false;
     }
     
@@ -392,6 +423,189 @@ bool Database::fixAdminPermissions()
     
     if (!query.exec()) {
         qCritical() << "修复管理员权限失败:" << query.lastError().text();
+        return false;
+    }
+    
+    return true;
+}
+
+QList<Database::TaskInfo> Database::getTaskList(int statusFilter, const QString& typeFilter)
+{
+    QList<TaskInfo> tasks;
+    QSqlQuery query;
+    
+    QString sql = "SELECT DISTINCT t.* FROM tasks t";
+    if (!typeFilter.isEmpty()) {
+        sql += " LEFT JOIN task_analysis_types at ON t.id = at.task_id";
+    }
+    sql += " WHERE 1=1";
+    
+    if (statusFilter >= 0) {
+        sql += " AND t.status = " + QString::number(statusFilter);
+    }
+    if (!typeFilter.isEmpty()) {
+        sql += " AND at.analysis_type = '" + typeFilter + "'";
+    }
+    sql += " ORDER BY t.create_time DESC";
+    
+    if (query.exec(sql)) {
+        while (query.next()) {
+            TaskInfo task;
+            task.id = query.value("id").toInt();
+            task.name = query.value("name").toString();
+            task.description = query.value("description").toString();
+            task.workDir = query.value("work_dir").toString();
+            task.modelPath = query.value("model_path").toString();
+            task.modelType = query.value("model_type").toString();
+            task.assignedTo = query.value("assigned_to").toInt();
+            task.assignDescription = query.value("assign_description").toString();
+            task.status = query.value("status").toInt();
+            task.createdBy = query.value("created_by").toInt();
+            task.createTime = query.value("create_time").toDateTime();
+            task.updateTime = query.value("update_time").toDateTime();
+            tasks.append(task);
+        }
+    } else {
+        qCritical() << "获取任务列表失败:" << query.lastError().text();
+    }
+    
+    return tasks;
+}
+
+QList<Database::TaskAnalysisType> Database::getTaskAnalysisTypes(int taskId)
+{
+    QList<TaskAnalysisType> types;
+    QSqlQuery query;
+    
+    query.prepare("SELECT * FROM task_analysis_types WHERE task_id = ?");
+    query.addBindValue(taskId);
+    
+    if (query.exec()) {
+        while (query.next()) {
+            TaskAnalysisType type;
+            type.taskId = query.value("task_id").toInt();
+            type.analysisType = query.value("analysis_type").toString();
+            type.parameters = query.value("parameters").toString();
+            types.append(type);
+        }
+    } else {
+        qCritical() << "获取任务分析类型失败:" << query.lastError().text();
+    }
+    
+    return types;
+}
+
+bool Database::addTask(const TaskInfo& task, const QList<TaskAnalysisType>& analysisTypes)
+{
+    m_db.transaction();
+    
+    QSqlQuery query;
+    query.prepare("INSERT INTO tasks (name, description, work_dir, model_path, model_type, "
+                 "assigned_to, assign_description, status, created_by, create_time, update_time) "
+                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    query.addBindValue(task.name);
+    query.addBindValue(task.description);
+    query.addBindValue(task.workDir);
+    query.addBindValue(task.modelPath);
+    query.addBindValue(task.modelType);
+    query.addBindValue(task.assignedTo);
+    query.addBindValue(task.assignDescription);
+    query.addBindValue(task.status);
+    query.addBindValue(task.createdBy);
+    query.addBindValue(task.createTime);
+    query.addBindValue(task.updateTime);
+    
+    if (!query.exec()) {
+        qCritical() << "添加任务失败:" << query.lastError().text();
+        m_db.rollback();
+        return false;
+    }
+    
+    int taskId = query.lastInsertId().toInt();
+    
+    // 添加分析类型
+    for (const auto& type : analysisTypes) {
+        query.prepare("INSERT INTO task_analysis_types (task_id, analysis_type, parameters) "
+                     "VALUES (?, ?, ?)");
+        query.addBindValue(taskId);
+        query.addBindValue(type.analysisType);
+        query.addBindValue(type.parameters);
+        
+        if (!query.exec()) {
+            qCritical() << "添加任务分析类型失败:" << query.lastError().text();
+            m_db.rollback();
+            return false;
+        }
+    }
+    
+    m_db.commit();
+    return true;
+}
+
+bool Database::getTaskInfo(int taskId, TaskInfo& taskInfo)
+{
+    QSqlQuery query;
+    query.prepare("SELECT * FROM tasks WHERE id = ?");
+    query.addBindValue(taskId);
+    
+    if (query.exec() && query.next()) {
+        taskInfo.id = query.value("id").toInt();
+        taskInfo.name = query.value("name").toString();
+        taskInfo.description = query.value("description").toString();
+        taskInfo.workDir = query.value("work_dir").toString();
+        taskInfo.modelPath = query.value("model_path").toString();
+        taskInfo.modelType = query.value("model_type").toString();
+        taskInfo.assignedTo = query.value("assigned_to").toInt();
+        taskInfo.assignDescription = query.value("assign_description").toString();
+        taskInfo.status = query.value("status").toInt();
+        taskInfo.createdBy = query.value("created_by").toInt();
+        taskInfo.createTime = query.value("create_time").toDateTime();
+        taskInfo.updateTime = query.value("update_time").toDateTime();
+        return true;
+    }
+    
+    qCritical() << "获取任务信息失败:" << query.lastError().text();
+    return false;
+}
+
+bool Database::deleteTask(int taskId)
+{
+    m_db.transaction();
+    
+    QSqlQuery query;
+    
+    // 删除任务分析类型
+    query.prepare("DELETE FROM task_analysis_types WHERE task_id = ?");
+    query.addBindValue(taskId);
+    if (!query.exec()) {
+        qCritical() << "删除任务分析类型失败:" << query.lastError().text();
+        m_db.rollback();
+        return false;
+    }
+    
+    // 删除任务
+    query.prepare("DELETE FROM tasks WHERE id = ?");
+    query.addBindValue(taskId);
+    if (!query.exec()) {
+        qCritical() << "删除任务失败:" << query.lastError().text();
+        m_db.rollback();
+        return false;
+    }
+    
+    m_db.commit();
+    return true;
+}
+
+bool Database::updateTaskStatus(int taskId, int status)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE tasks SET status = ?, update_time = ? WHERE id = ?");
+    query.addBindValue(status);
+    query.addBindValue(QDateTime::currentDateTime());
+    query.addBindValue(taskId);
+    
+    if (!query.exec()) {
+        qCritical() << "更新任务状态失败:" << query.lastError().text();
         return false;
     }
     

@@ -1,0 +1,20 @@
+# ninja log v6
+14	750	7567382656829500	src/CDSimulation_autogen/timestamp	5c4d42b4332630e6
+963	6004	7567382659731300	src/CMakeFiles/CDSimulation.dir/views/system/systemmanager.cpp.obj	5985c44f7faed1e9
+14	750	7567382656829500	src/CDSimulation_autogen/mocs_compilation.cpp	5c4d42b4332630e6
+1012	4578	7567382660219792	src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj	7ef998b475fd8a87
+1692	5473	7567357347798669	src/CMakeFiles/CDSimulation.dir/utils/config.cpp.obj	3e8506a8c7417766
+14	750	7567382656829500	D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CDSimulation_autogen/timestamp	5c4d42b4332630e6
+14	750	7567382656829500	D:/XMH_PROJECT/QT/CDSimulation/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/src/CDSimulation_autogen/mocs_compilation.cpp	5c4d42b4332630e6
+1601	3447	7567357346893228	src/CMakeFiles/CDSimulation.dir/core/user.cpp.obj	299c660cd8cf40eb
+1058	4634	7567382660679485	src/CMakeFiles/CDSimulation.dir/views/system/user_edit_dialog.cpp.obj	aafef5b509f263c6
+833	4421	7567382658438664	src/CMakeFiles/CDSimulation.dir/core/database.cpp.obj	1948d771cba84afc
+792	4012	7567382658019114	src/CMakeFiles/CDSimulation.dir/main.cpp.obj	b1395c448b07301b
+920	4192	7567382659296477	src/CMakeFiles/CDSimulation.dir/views/register.cpp.obj	a630f488d05f1780
+876	4919	7567382658852553	src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj	afddc07481d54fc4
+1166	4973	7567382661763479	src/CMakeFiles/CDSimulation.dir/views/system/approvalmanager.cpp.obj	825451dbb0473af7
+752	5130	7567382657618806	src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj	baa4d54d6686309f
+1788	6583	7567357348756409	src/CMakeFiles/CDSimulation.dir/views/config_dialog.cpp.obj	77e476392bd886dd
+1222	5482	7567382662322913	src/CMakeFiles/CDSimulation.dir/views/system/rolemanager.cpp.obj	bb9a1dc97370edef
+1114	5215	7567382661240146	src/CMakeFiles/CDSimulation.dir/views/system/usermanager.cpp.obj	22c285ca006c994b
+6004	7014	7567382710139159	src/CDSimulation.exe	2363349f7b9bd7ed

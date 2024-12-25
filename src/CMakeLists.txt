@@ -12,6 +12,7 @@ set(PROJECT_SOURCES
     views/system/usermanager.cpp
     views/system/approvalmanager.cpp
     views/system/rolemanager.cpp
+    views/system/structure_hierarchy_dialog.cpp
 )
 
 set(PROJECT_HEADERS
@@ -26,6 +27,7 @@ set(PROJECT_HEADERS
     views/system/user_edit_dialog.h
     views/system/usermanager.h
     views/system/approvalmanager.h
+    views/system/structure_hierarchy_dialog.h
 )
 
 # 添加UI文件
@@ -38,12 +40,51 @@ set(PROJECT_UI
     views/system/user_edit_dialog.ui
     views/system/usermanager.ui
     views/system/approvalmanager.ui
+    views/system/structure_hierarchy_dialog.ui
+)
+
+# 添加分析模块源文件
+set(ANALYSIS_SOURCES
+    views/analysis/analysis_module_base.cpp
+    views/analysis/modal_analysis_module.cpp
+    views/analysis/static_analysis_module.cpp
+    views/analysis/vibration_analysis_module.cpp
+    views/analysis/acoustic_analysis_module.cpp
+    views/analysis/underwater_analysis_module.cpp
+)
+
+# 添加分析模块头文件
+set(ANALYSIS_HEADERS
+    views/analysis/analysis_module_base.h
+    views/analysis/modal_analysis_module.h
+    views/analysis/static_analysis_module.h
+    views/analysis/vibration_analysis_module.h
+    views/analysis/acoustic_analysis_module.h
+    views/analysis/underwater_analysis_module.h
+)
+
+# 添加分析模块UI文件
+set(ANALYSIS_UI
+    views/analysis/modal_analysis_module.ui
+    views/analysis/static_analysis_module.ui
+    views/analysis/vibration_analysis_module.ui
+    views/analysis/acoustic_analysis_module.ui
+    views/analysis/underwater_analysis_module.ui
+)
+
+# 将ANALYSIS_UI添加到PROJECT_UI中
+set(PROJECT_UI
+    ${PROJECT_UI}
+    ${ANALYSIS_UI}
 )
 
 add_executable(${PROJECT_NAME}
     ${PROJECT_SOURCES}
     ${PROJECT_HEADERS}
+    ${ANALYSIS_SOURCES}
+    ${ANALYSIS_HEADERS}
     ${PROJECT_UI}
+    ${ANALYSIS_UI}
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
@@ -57,4 +98,5 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/views
     ${CMAKE_CURRENT_SOURCE_DIR}/views/system
+    ${CMAKE_CURRENT_SOURCE_DIR}/views/analysis
 ) 
