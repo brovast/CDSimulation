@@ -4,7 +4,6 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/G7HMF6KTAH/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20memory.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20type_traits.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q23utility.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qalgorithms.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qanystringview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qarraydata.h \
@@ -46,13 +45,11 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/G7HMF6KTAH/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qhash.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qhashfunctions.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiodevicebase.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiterable.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiterator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qline.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlist.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlogging.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qmalloc.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qmap.h \
@@ -73,7 +70,6 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/G7HMF6KTAH/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qprocessordetection.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qrect.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qrefcount.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qscopedpointer.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qscopeguard.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qset.h \
@@ -144,38 +140,10 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/G7HMF6KTAH/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtguiglobal.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtransform.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -378,5 +346,4 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/G7HMF6KTAH/
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h
+  D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

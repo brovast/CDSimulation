@@ -2,6 +2,10 @@
 #include "ui_workbench.h"
 #include "../core/database.h"
 #include <QMessageBox>
+#include <QDesktopServices>
+#include <QUrl>
+#include <QDir>
+#include <QFile>
 
 Workbench::Workbench(int userId, QWidget* parent)
     : QMainWindow(parent)
@@ -61,6 +65,14 @@ void Workbench::setupConnections()
             this, &Workbench::onAcceptTaskClicked);
     connect(ui->btnCompleteTask, &QPushButton::clicked,
             this, &Workbench::onCompleteTaskClicked);
+    
+    // 查看附件按钮
+    connect(ui->btnViewAttachment, &QPushButton::clicked, this, [this]() {
+        QString attachmentPath = ui->lineEditAttachmentPath->text();
+        if (!attachmentPath.isEmpty()) {
+            QDesktopServices::openUrl(QUrl::fromLocalFile(attachmentPath));
+        }
+    });
 }
 
 void Workbench::loadTaskList()
@@ -148,6 +160,21 @@ void Workbench::loadTaskDetails(int taskId)
     // 根据任务状态设置按钮状态
     ui->btnAcceptTask->setEnabled(taskInfo.status == 0);  // 只有待接收状态可以接收
     ui->btnCompleteTask->setEnabled(taskInfo.status == 1);  // 只有进行中状态可以完成
+    
+    // 更新附件路径显示
+    QString taskDir = taskInfo.workDir;
+    QString attachmentDir = QDir(taskDir).filePath("attachments");
+    QDir dir(attachmentDir);
+    if (dir.exists() && !dir.entryList(QDir::Files).isEmpty()) {
+        // 获取第一个附件文件的路径
+        QString fileName = dir.entryList(QDir::Files).first();
+        QString attachmentPath = dir.filePath(fileName);
+        ui->lineEditAttachmentPath->setText(attachmentPath);
+        ui->btnViewAttachment->setEnabled(true);
+    } else {
+        ui->lineEditAttachmentPath->clear();
+        ui->btnViewAttachment->setEnabled(false);
+    }
 }
 
 void Workbench::updateTaskStatus(int taskId, int status)
@@ -248,11 +275,11 @@ void Workbench::onCompleteTaskClicked()
 void Workbench::setupAnalysisModules()
 {
     // 创建分析模块
-    m_modalModule = new ModalAnalysisModule(this);
+    m_dryModalModule = new DryModalAnalysisModule(this);
+    m_wetModalModule = new WetModalAnalysisModule(this);
     m_staticModule = new StaticAnalysisModule(this);
     m_vibrationModule = new VibrationAnalysisModule(this);
     m_acousticModule = new AcousticAnalysisModule(this);
-    m_underwaterModule = new UnderwaterAnalysisModule(this);
 
     // 获取任务执行标签页中的分析模块选择器
     QTabWidget* analysisModules = ui->tabTaskExecution->findChild<QTabWidget*>("tabAnalysisModules");
@@ -263,9 +290,9 @@ void Workbench::setupAnalysisModules()
     }
 
     // 添加各个分析模块
-    analysisModules->addTab(m_modalModule, "模态分析");
+    analysisModules->addTab(m_dryModalModule, "干模态分析");
+    analysisModules->addTab(m_wetModalModule, "湿模态分析");
     analysisModules->addTab(m_staticModule, "静力学分析");
     analysisModules->addTab(m_vibrationModule, "振动分析");
     analysisModules->addTab(m_acousticModule, "声学分析");
-    analysisModules->addTab(m_underwaterModule, "水下仿真");
 } 

@@ -72,7 +72,7 @@ void ApprovalManager::loadApprovalList()
         // 状态
         QString statusText;
         switch (approval.status) {
-            case 0: statusText = "���审批"; break;
+            case 0: statusText = "待审批"; break;
             case 1: statusText = "已通过"; break;
             case 2: statusText = "已拒绝"; break;
             default: statusText = "未知";

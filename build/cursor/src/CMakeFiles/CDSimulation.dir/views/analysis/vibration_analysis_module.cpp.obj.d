@@ -1,7 +1,6 @@
 src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.obj: \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis\vibration_analysis_module.cpp \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis\vibration_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis\analysis_module_base.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -361,40 +360,6 @@ src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.obj
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qcursor.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qbitmap.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qregularexpression.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/ui_vibration_analysis_module.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QVariant \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qvariant.h \
@@ -409,10 +374,20 @@ src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.obj
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qinputmethod.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qlocale.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlabel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qpicture.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qiodevice.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qtextdocument.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qurl.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMessageBox \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmessagebox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget

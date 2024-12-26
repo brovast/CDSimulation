@@ -37,15 +37,9 @@
 			null
 		],
 		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h",
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.h",
 			"MU",
-			"G7HMF6KTAH/moc_analysis_module_base.cpp",
-			null
-		],
-		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.h",
-			"MU",
-			"G7HMF6KTAH/moc_modal_analysis_module.cpp",
+			"G7HMF6KTAH/moc_dry_modal_analysis_module.cpp",
 			null
 		],
 		[
@@ -55,15 +49,15 @@
 			null
 		],
 		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.h",
-			"MU",
-			"G7HMF6KTAH/moc_underwater_analysis_module.cpp",
-			null
-		],
-		[
 			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h",
 			"MU",
 			"G7HMF6KTAH/moc_vibration_analysis_module.cpp",
+			null
+		],
+		[
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.h",
+			"MU",
+			"G7HMF6KTAH/moc_wet_modal_analysis_module.cpp",
 			null
 		],
 		[
@@ -219,12 +213,7 @@
 			null
 		],
 		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.cpp",
-			"MU",
-			null
-		],
-		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.cpp",
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.cpp",
 			"MU",
 			null
 		],
@@ -234,12 +223,12 @@
 			null
 		],
 		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.cpp",
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.cpp",
+			"D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.cpp",
 			"MU",
 			null
 		],

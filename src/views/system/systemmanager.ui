@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidgetMain">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tabDataManage">
        <attribute name="title">
@@ -28,7 +28,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidgetDataManage">
           <property name="currentIndex">
-           <number>3</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="tabBasicData">
            <attribute name="title">
@@ -110,6 +110,31 @@
                  </widget>
                 </item>
                </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelAttachment">
+              <property name="text">
+               <string>附件：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_attachment">
+              <item>
+               <widget class="QLineEdit" name="lineEditAttachmentPath">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnSelectAttachment">
+                <property name="text">
+                 <string>选择附件</string>
+                </property>
+               </widget>
               </item>
              </layout>
             </item>
@@ -195,8 +220,38 @@
           </widget>
           <widget class="QWidget" name="tabUnderwaterData">
            <attribute name="title">
-            <string>水下仿真库</string>
+            <string>声学参数库</string>
            </attribute>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_csv_2">
+              <item>
+               <widget class="QLabel" name="labelAcousticsPath">
+                <property name="text">
+                 <string>CSV文件路径：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditAcousticsPath">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnSelectAcousticsCSV">
+                <property name="text">
+                 <string>选择文件</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableAcoustics"/>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="tabMaterialData">
            <attribute name="title">
@@ -238,7 +293,6 @@
             <string>载荷库</string>
            </attribute>
            <layout class="QHBoxLayout" name="horizontalLayout_load">
-            <!-- 左侧区域 -->
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_load_left">
               <item>
@@ -271,13 +325,11 @@
               </item>
              </layout>
             </item>
-            <!-- 中间区域 -->
             <item>
              <widget class="QTableWidget" name="tableLoadData"/>
             </item>
-            <!-- 右侧区域 -->
             <item>
-             <widget class="QChartView" name="chartLoadView"/>
+             <widget class="QChartView" name="chartLoadView" native="true"/>
             </item>
            </layout>
           </widget>
@@ -479,6 +531,31 @@
                <item row="2" column="1">
                 <widget class="QTextEdit" name="textEditTaskDescription"/>
                </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="labelTaskAttachment">
+                 <property name="text">
+                  <string>附件：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_taskAttachment">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditTaskAttachmentPath">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSelectTaskAttachment">
+                   <property name="text">
+                    <string>选择附件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
               </layout>
              </widget>
             </item>
@@ -520,74 +597,40 @@
               <property name="title">
                <string>分析类型</string>
               </property>
-              <layout class="QVBoxLayout" name="verticalLayout_analysis">
+              <layout class="QHBoxLayout" name="horizontalLayout_analysis">
                <item>
-                <widget class="QGroupBox" name="groupBoxModal">
-                 <property name="title">
-                  <string>模态分析</string>
+                <widget class="QCheckBox" name="checkBoxDryModalAnalysis">
+                 <property name="text">
+                  <string>干模态分析</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_modal">
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxDryModalAnalysis">
-                    <property name="text">
-                     <string>干模态分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxWetModalAnalysis">
-                    <property name="text">
-                     <string>湿模态分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
                <item>
-                <widget class="QGroupBox" name="groupBoxStatic">
-                 <property name="title">
+                <widget class="QCheckBox" name="checkBoxWetModalAnalysis">
+                 <property name="text">
+                  <string>湿模态分析</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBoxStaticAnalysis">
+                 <property name="text">
                   <string>静力学分析</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_static">
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxShellStrengthAnalysis">
-                    <property name="text">
-                     <string>壳体强度分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxValveFrameStrengthAnalysis">
-                    <property name="text">
-                     <string>阀架强度分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
                <item>
-                <widget class="QGroupBox" name="groupBoxVibration">
-                 <property name="title">
+                <widget class="QCheckBox" name="checkBoxVibrationAnalysis">
+                 <property name="text">
                   <string>振动分析</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_vibration">
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxSingleSideExcitationAnalysis">
-                    <property name="text">
-                     <string>单舷激励分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QCheckBox" name="checkBoxDoubleSideExcitationAnalysis">
-                    <property name="text">
-                     <string>双舷激励分析</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBoxAcousticAnalysis">
+                 <property name="text">
+                  <string>声学分析</string>
+                 </property>
                 </widget>
                </item>
               </layout>
@@ -710,7 +753,7 @@
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>20</height>
+     <height>33</height>
     </rect>
    </property>
   </widget>
@@ -734,6 +777,11 @@
    <extends>QWidget</extends>
    <header>views/system/approvalmanager.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>qchartview.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -104,6 +104,13 @@ void SystemManager::initUI()
     QString defaultWorkDir = QDir(QCoreApplication::applicationDirPath()).filePath("tasks");
     ui->lineEditWorkDir->setText(defaultWorkDir);
     
+    // 加载声学参数库CSV文件
+    m_currentAcousticsCSVPath = Config::getInstance().getValue("AcousticsCSV/Path").toString();
+    if (!m_currentAcousticsCSVPath.isEmpty()) {
+        ui->lineEditAcousticsPath->setText(m_currentAcousticsCSVPath);
+        loadAcousticsCSV(m_currentAcousticsCSVPath);
+    }
+    
     // 加载材料库CSV文件
     m_currentMaterialCSVPath = Config::getInstance().getValue("MaterialCSV/Path").toString();
     if (!m_currentMaterialCSVPath.isEmpty()) {
@@ -173,6 +180,9 @@ void SystemManager::setupConnections()
     connect(ui->btnTaskPublish, &QPushButton::clicked, this, &SystemManager::onTaskPublishClicked);
     connect(ui->btnTaskDelete, &QPushButton::clicked, this, &SystemManager::onTaskDeleteClicked);
 
+    // 声学参数库相关连接
+    connect(ui->btnSelectAcousticsCSV, &QPushButton::clicked, this, &SystemManager::onSelectAcousticsPath);
+
     // 添加材料库相关连接
     connect(ui->btnSelectCSV, &QPushButton::clicked, this, &SystemManager::onSelectCSVClicked);
 
@@ -181,6 +191,14 @@ void SystemManager::setupConnections()
             this, &SystemManager::onSelectLoadPathClicked);
     connect(ui->listLoadFiles, &QListWidget::itemClicked, 
             this, &SystemManager::onLoadFileSelected);
+
+    // 添加附件相关连接
+    connect(ui->btnSelectTaskAttachment, &QPushButton::clicked, this, [this]() {
+        QString filePath = QFileDialog::getOpenFileName(this, "选择附件");
+        if (!filePath.isEmpty()) {
+            ui->lineEditTaskAttachmentPath->setText(filePath);
+        }
+    });
 }
 
 void SystemManager::loadBasicDataTree()
@@ -521,7 +539,7 @@ void SystemManager::onDeleteBasicData()
 {
     QModelIndex currentIndex = ui->treeViewBasicData->currentIndex();
     if (!currentIndex.isValid()) {
-        QMessageBox::warning(this, "警告", "请先��择要删除的项目！");
+        QMessageBox::warning(this, "警告", "请先选择要删除的项目！");
         return;
     }
     
@@ -685,7 +703,7 @@ void SystemManager::loadEngineerList()
 {
     ui->comboBoxUserSelect->clear();
     
-    // 获取角色为工程师的用户列表
+    // 获取角色工程师的用户列表
     QList<Database::UserInfo> users = Database::getInstance().getUserList(1); // 1表示已审批状态
     for (const auto& user : users) {
         if (user.roleId == 2) { // 2表示工程师角色
@@ -742,10 +760,9 @@ void SystemManager::clearTaskForm()
     // 清空所有分析类型复选框
     ui->checkBoxDryModalAnalysis->setChecked(false);
     ui->checkBoxWetModalAnalysis->setChecked(false);
-    ui->checkBoxShellStrengthAnalysis->setChecked(false);
-    ui->checkBoxValveFrameStrengthAnalysis->setChecked(false);
-    ui->checkBoxSingleSideExcitationAnalysis->setChecked(false);
-    ui->checkBoxDoubleSideExcitationAnalysis->setChecked(false);
+    ui->checkBoxStaticAnalysis->setChecked(false);
+    ui->checkBoxVibrationAnalysis->setChecked(false);
+    ui->checkBoxAcousticAnalysis->setChecked(false);
     
     // 重置下拉框选择
     if (ui->comboBoxModelSelect->count() > 0) {
@@ -758,28 +775,40 @@ void SystemManager::clearTaskForm()
 
 void SystemManager::onTaskPublishClicked()
 {
-    // 1. 验证输入
+    // 1. 获取并验证所有必要的输入
     QString taskName = ui->lineEditTaskName->text().trimmed();
     QString workDir = ui->lineEditWorkDir->text();
     QString modelPath = ui->lineEditModelPath->text();
     int assignedTo = ui->comboBoxUserSelect->currentData().toInt();
-    
+    QString userName = ui->comboBoxUserSelect->currentText();
+
+    // 2. 验证输入
     if (taskName.isEmpty()) {
         QMessageBox::warning(this, "警告", "请输入任务名称！");
         return;
     }
-    
+
+    if (workDir.isEmpty()) {
+        QMessageBox::warning(this, "警告", "请选择工作目录！");
+        return;
+    }
+
+    if (modelPath.isEmpty()) {
+        QMessageBox::warning(this, "警告", "请选择模型文件！");
+        return;
+    }
+
     if (assignedTo == 0) {
         QMessageBox::warning(this, "警告", "请选择指派人员！");
         return;
     }
-    
-    // 2. 收集分析类型
+
+    // 3. 获取分析类型
     QList<Database::TaskAnalysisType> analysisTypes;
     if (ui->checkBoxDryModalAnalysis->isChecked()) {
         Database::TaskAnalysisType type;
         type.analysisType = "干模态分析";
-        type.parameters = "{}";  // TODO: 后续添加参数设置
+        type.parameters = "{}";
         analysisTypes.append(type);
     }
     if (ui->checkBoxWetModalAnalysis->isChecked()) {
@@ -788,34 +817,69 @@ void SystemManager::onTaskPublishClicked()
         type.parameters = "{}";
         analysisTypes.append(type);
     }
-    // ... 添加其他分析类型
-    
+    if (ui->checkBoxStaticAnalysis->isChecked()) {
+        Database::TaskAnalysisType type;
+        type.analysisType = "静力学分析";
+        type.parameters = "{}";
+        analysisTypes.append(type);
+    }
+    if (ui->checkBoxVibrationAnalysis->isChecked()) {
+        Database::TaskAnalysisType type;
+        type.analysisType = "振动分析";
+        type.parameters = "{}";
+        analysisTypes.append(type);
+    }
+    if (ui->checkBoxAcousticAnalysis->isChecked()) {
+        Database::TaskAnalysisType type;
+        type.analysisType = "声学分析";
+        type.parameters = "{}";
+        analysisTypes.append(type);
+    }
+
     if (analysisTypes.isEmpty()) {
         QMessageBox::warning(this, "警告", "请至少选择一种分析类型！");
         return;
     }
-    
-    // 3. 创建任务目录
+
+    // 4. 创建任务目录
+    QString folderName = QString("%1_%2").arg(userName).arg(taskName);
     QDir dir(workDir);
-    QString taskDir = dir.filePath(QString::number(QDateTime::currentDateTime().toSecsSinceEpoch()));
-    if (!dir.mkpath(taskDir)) {
+    QString taskDir = dir.filePath(folderName);
+
+    // 检查目录是否已存在
+    if (QDir(taskDir).exists()) {
+        QMessageBox::warning(this, "警告", "该任务目录已存在！");
+        return;
+    }
+
+    // 创建任务目录及其子目录
+    if (!QDir().mkpath(taskDir)) {
         QMessageBox::critical(this, "错误", "创建任务目录失败！");
         return;
     }
-    
-    // 4. 复制模型文件
-    QString modelDir = QDir(taskDir).filePath("model");
-    if (!copyDirectory(modelPath, modelDir)) {
+
+    // 创建分析类型子目录
+    QStringList subDirs = {"model", "drymodal/results", "wetmodal/results", 
+                          "static/results", "vibration/results", "acoustics/results"};
+    for (const QString& subDir : subDirs) {
+        if (!QDir().mkpath(QDir(taskDir).filePath(subDir))) {
+            QMessageBox::critical(this, "错误", "创建子目录失败！");
+            return;
+        }
+    }
+
+    // 5. 复制模型文件
+    if (!copyDirectory(modelPath, QDir(taskDir).filePath("model"))) {
         QMessageBox::critical(this, "错误", "复制模型文件失败！");
         return;
     }
     
-    // 5. 创建任务记录
+    // 6. 创建任务记录
     Database::TaskInfo task;
     task.name = taskName;
     task.description = ui->textEditTaskDescription->toPlainText();
     task.workDir = taskDir;
-    task.modelPath = modelDir;
+    task.modelPath = QDir(taskDir).filePath("model");
     task.modelType = ui->comboBoxModelSelect->currentText();
     task.assignedTo = assignedTo;
     task.assignDescription = ui->lineEditAssignDescription->text();
@@ -824,7 +888,7 @@ void SystemManager::onTaskPublishClicked()
     task.createTime = QDateTime::currentDateTime();
     task.updateTime = task.createTime;
     
-    // 6. 保存到数据库
+    // 7. 保存到数据库
     if (Database::getInstance().addTask(task, analysisTypes)) {
         QMessageBox::information(this, "提示", "任务发布成功！");
         clearTaskForm();
@@ -832,6 +896,25 @@ void SystemManager::onTaskPublishClicked()
     } else {
         QMessageBox::critical(this, "错误", "任务发布失败！");
         // TODO: 清理已创建的目录
+    }
+
+    // 复制附件
+    QString attachmentPath = ui->lineEditTaskAttachmentPath->text();
+    if (!attachmentPath.isEmpty()) {
+        // 获取原始文件名
+        QFileInfo fileInfo(attachmentPath);
+        QString fileName = fileInfo.fileName();
+        
+        // 在任务目录下创建附件目录
+        QString attachmentDir = QDir(taskDir).filePath("attachments");
+        QDir().mkpath(attachmentDir);
+        
+        // 使用原始文件名复制
+        QString targetPath = QDir(attachmentDir).filePath(fileName);
+        if (!QFile::copy(attachmentPath, targetPath)) {
+            QMessageBox::warning(this, "警告", "附件复制失败！");
+            return;
+        }
     }
 }
 
@@ -879,8 +962,65 @@ void SystemManager::onTaskDeleteClicked()
         }
     }
 }
+//声学参数库函数实现
+void SystemManager::onSelectAcousticsPath()
+{
+    QString filePath = QFileDialog::getOpenFileName(
+        this,
+        "选择声学参数库文件",
+        QString(),
+        "CSV文件 (*.csv)"
+    );
+    
+    if (!filePath.isEmpty()) {
+        m_currentMaterialCSVPath = filePath;
+        ui->lineEditCSVPath->setText(filePath);
+        loadCSVData(filePath);
+        
+        // 保存声学参数库CSV文件路径到配置文件
+        Config::getInstance().setValue("AcousticsCSV/Path", filePath);
+    }
+}
 
-// 添加新的函数实现
+void SystemManager::loadAcousticsCSV(const QString& filePath)
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::critical(this, "错误", "无法打开CSV文件！");
+        return;
+    }
+    
+    QTextStream in(&file);
+    
+    // 读取表头
+    QString headerLine = in.readLine();
+    QStringList headers = headerLine.split(",");
+    
+    ui->tableAcoustics->clear();
+    ui->tableAcoustics->setColumnCount(headers.size());
+    ui->tableAcoustics->setHorizontalHeaderLabels(headers);
+    
+    // 读取数据
+    int row = 0;
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QStringList fields = line.split(",");
+        
+        ui->tableAcoustics->insertRow(row);
+        for (int col = 0; col < fields.size(); ++col) {
+            ui->tableAcoustics->setItem(row, col, new QTableWidgetItem(fields[col]));
+        }
+        row++;
+    }
+    
+    file.close();
+    
+    // 调整列宽以适应内容
+    ui->tableAcoustics->resizeColumnsToContents();
+}
+
+
+// 材料库实现函数实现
 void SystemManager::onSelectCSVClicked()
 {
     QString filePath = QFileDialog::getOpenFileName(
@@ -1051,4 +1191,4 @@ void SystemManager::updateLoadChart(const QVector<QPointF>& points)
     }
 }
 
-// 其他槽函数的实现将在后续添加... 
+// 其他槽函数的实现将在后续加... 

@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -20,6 +21,7 @@ class Ui_VibrationAnalysisModule
 {
 public:
     QVBoxLayout *verticalLayout;
+    QLabel *label;
 
     void setupUi(QWidget *VibrationAnalysisModule)
     {
@@ -28,6 +30,11 @@ public:
         VibrationAnalysisModule->resize(800, 600);
         verticalLayout = new QVBoxLayout(VibrationAnalysisModule);
         verticalLayout->setObjectName("verticalLayout");
+        label = new QLabel(VibrationAnalysisModule);
+        label->setObjectName("label");
+
+        verticalLayout->addWidget(label);
+
 
         retranslateUi(VibrationAnalysisModule);
 
@@ -37,6 +44,7 @@ public:
     void retranslateUi(QWidget *VibrationAnalysisModule)
     {
         VibrationAnalysisModule->setWindowTitle(QCoreApplication::translate("VibrationAnalysisModule", "\346\214\257\345\212\250\345\210\206\346\236\220", nullptr));
+        label->setText(QCoreApplication::translate("VibrationAnalysisModule", "\346\214\257\345\212\250\345\210\206\346\236\220", nullptr));
     } // retranslateUi
 
 };

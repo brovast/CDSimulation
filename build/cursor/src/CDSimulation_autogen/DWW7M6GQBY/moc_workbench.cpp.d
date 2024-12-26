@@ -147,28 +147,16 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidgetItem \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmainwindow.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qslider.h \
@@ -178,7 +166,6 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
-  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -383,8 +370,7 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.h \
-  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h \
-  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.h \
+  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.h \
   D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h \
-  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.h \
-  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h
+  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h \
+  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.h

@@ -164,6 +164,31 @@
                <item row="2" column="1">
                 <widget class="QTextBrowser" name="textBrowserDescription"/>
                </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="labelAttachment">
+                 <property name="text">
+                  <string>附件：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_attachment">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditAttachmentPath">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnViewAttachment">
+                   <property name="text">
+                    <string>查看附件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
               </layout>
              </widget>
             </item>

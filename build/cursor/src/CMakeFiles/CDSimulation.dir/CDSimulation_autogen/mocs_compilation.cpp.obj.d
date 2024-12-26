@@ -344,7 +344,6 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstringlist.h \
  D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_acoustic_analysis_module.cpp \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.h \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -382,14 +381,36 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qcursor.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qbitmap.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_dry_modal_analysis_module.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_static_analysis_module.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_vibration_analysis_module.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_wet_modal_analysis_module.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_config_dialog.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QDialog \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_login.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/login.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_register.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/register.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_approvalmanager.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_rolemanager.cpp \
+ D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qframe.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleoption.h \
@@ -402,50 +423,13 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_analysis_module_base.cpp \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_modal_analysis_module.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_static_analysis_module.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_underwater_analysis_module.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\G7HMF6KTAH/moc_vibration_analysis_module.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_config_dialog.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QDialog \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_login.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/login.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\DWW7M6GQBY/moc_register.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/register.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_approvalmanager.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/system/approvalmanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QStandardItemModel \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qstandarditemmodel.h \
- D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_rolemanager.cpp \
- D:/XMH_PROJECT/QT/CDSimulation/src/views/system/rolemanager.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QString \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qstring.h \
  D:\XMH_PROJECT\QT\CDSimulation\build\cursor\src\CDSimulation_autogen\NJFCAZ76KP/moc_structure_hierarchy_dialog.cpp \
  D:/XMH_PROJECT/QT/CDSimulation/src/views/system/structure_hierarchy_dialog.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QFileSystemModel \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qfilesystemmodel.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdir.h \
@@ -1062,9 +1046,15 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qactiongroup.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QActionGroup \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qapplication.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qbuttongroup.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcalendarwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcolordialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qcolormap.h \
@@ -1120,6 +1110,7 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgraphicswidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qheaderview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qinputdialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlineedit.h \
@@ -1147,6 +1138,7 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qprogressdialog.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qproxystyle.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QCommonStyle \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qradiobutton.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrhiwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
@@ -1177,6 +1169,8 @@ src/CMakeFiles/CDSimulation.dir/CDSimulation_autogen/mocs_compilation.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyleplugin.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qsystemtrayicon.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtablewidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtableview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtextbrowser.h \

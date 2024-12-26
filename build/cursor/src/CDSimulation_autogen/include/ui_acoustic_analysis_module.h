@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -20,6 +21,7 @@ class Ui_AcousticAnalysisModule
 {
 public:
     QVBoxLayout *verticalLayout;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *AcousticAnalysisModule)
     {
@@ -28,6 +30,11 @@ public:
         AcousticAnalysisModule->resize(800, 600);
         verticalLayout = new QVBoxLayout(AcousticAnalysisModule);
         verticalLayout->setObjectName("verticalLayout");
+        pushButton = new QPushButton(AcousticAnalysisModule);
+        pushButton->setObjectName("pushButton");
+
+        verticalLayout->addWidget(pushButton);
+
 
         retranslateUi(AcousticAnalysisModule);
 
@@ -37,6 +44,7 @@ public:
     void retranslateUi(QWidget *AcousticAnalysisModule)
     {
         AcousticAnalysisModule->setWindowTitle(QCoreApplication::translate("AcousticAnalysisModule", "\345\243\260\345\255\246\345\210\206\346\236\220", nullptr));
+        pushButton->setText(QCoreApplication::translate("AcousticAnalysisModule", "PushButton", nullptr));
     } // retranslateUi
 
 };

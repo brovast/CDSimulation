@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -20,6 +21,7 @@ class Ui_StaticAnalysisModule
 {
 public:
     QVBoxLayout *verticalLayout;
+    QLabel *label;
 
     void setupUi(QWidget *StaticAnalysisModule)
     {
@@ -28,6 +30,11 @@ public:
         StaticAnalysisModule->resize(800, 600);
         verticalLayout = new QVBoxLayout(StaticAnalysisModule);
         verticalLayout->setObjectName("verticalLayout");
+        label = new QLabel(StaticAnalysisModule);
+        label->setObjectName("label");
+
+        verticalLayout->addWidget(label);
+
 
         retranslateUi(StaticAnalysisModule);
 
@@ -37,6 +44,7 @@ public:
     void retranslateUi(QWidget *StaticAnalysisModule)
     {
         StaticAnalysisModule->setWindowTitle(QCoreApplication::translate("StaticAnalysisModule", "\351\235\231\345\212\233\345\255\246\345\210\206\346\236\220", nullptr));
+        label->setText(QCoreApplication::translate("StaticAnalysisModule", "\351\235\231\345\212\233\345\255\246\345\210\206\346\236\220", nullptr));
     } // retranslateUi
 
 };

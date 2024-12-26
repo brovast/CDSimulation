@@ -529,18 +529,14 @@ CDSimulation_autogen/timestamp: \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QDialog \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGraphicsView \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGraphicsWidget \
-	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLayout \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
-	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QScrollerProperties \
-	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidgetItem \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTextEdit \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeWidgetItem \
-	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QtWidgets \
 	D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QtWidgetsDepends \
@@ -1004,16 +1000,14 @@ CDSimulation_autogen/timestamp: \
 	D:/XMH_PROJECT/QT/CDSimulation/src/utils/config.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.cpp \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.h \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.cpp \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/analysis_module_base.h \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.cpp \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.h \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.cpp \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.cpp \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.cpp \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.cpp \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.h \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.cpp \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.cpp \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/login.cpp \
@@ -1035,10 +1029,10 @@ CDSimulation_autogen/timestamp: \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/workbench.cpp \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/workbench.h \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.ui \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/modal_analysis_module.ui \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.ui \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.ui \
-	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/underwater_analysis_module.ui \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/vibration_analysis_module.ui \
+	D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/wet_modal_analysis_module.ui \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/config_dialog.ui \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/login.ui \
 	D:/XMH_PROJECT/QT/CDSimulation/src/views/register.ui \

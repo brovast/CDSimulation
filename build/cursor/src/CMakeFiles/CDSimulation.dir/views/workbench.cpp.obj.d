@@ -381,28 +381,13 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/modal_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/analysis_module_base.h \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/dry_modal_analysis_module.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtreeview.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/wet_modal_analysis_module.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/static_analysis_module.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/vibration_analysis_module.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/acoustic_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/underwater_analysis_module.h \
  D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/include/ui_workbench.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QVariant \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qvariant.h \
@@ -424,8 +409,14 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qformlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLayout \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qgroupbox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QHeaderView \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qheaderview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QLabel \
@@ -445,6 +436,8 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlistview.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qabstractbutton.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QSpacerItem \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QSplitter \
@@ -473,4 +466,47 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/QDesktopServices \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qdesktopservices.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QUrl \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qurl.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDir \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdir.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfile.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfiledevice.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/codecvt \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
+ D:/IndSoftware/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfileinfo.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qtimezone.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QFile \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qfile.h

@@ -75,7 +75,7 @@ database/
 
 ## 文件系统结构
 tasks/                                     -- 任务根目录
-└── username+taskname/                     -- 任务工作目录
+└── username_taskname/                     -- 任务工作目录(以用户名_任务名创建文件夹)
     ├── model/                            -- 模型文件目录（从cddata复制）
     ├── drymodal/                         -- 干模态分析
     │   └── results/                      -- 干模态分析结果目录

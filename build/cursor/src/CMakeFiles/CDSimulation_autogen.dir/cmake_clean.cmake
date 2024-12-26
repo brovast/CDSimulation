@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CDSimulation_autogen/include/views/analysis/ui_acoustic_analysis_module.h"
-  "CDSimulation_autogen/include/views/analysis/ui_modal_analysis_module.h"
+  "CDSimulation_autogen/include/views/analysis/ui_dry_modal_analysis_module.h"
   "CDSimulation_autogen/include/views/analysis/ui_static_analysis_module.h"
-  "CDSimulation_autogen/include/views/analysis/ui_underwater_analysis_module.h"
   "CDSimulation_autogen/include/views/analysis/ui_vibration_analysis_module.h"
+  "CDSimulation_autogen/include/views/analysis/ui_wet_modal_analysis_module.h"
   "CDSimulation_autogen/include/views/system/ui_approvalmanager.h"
   "CDSimulation_autogen/include/views/system/ui_structure_hierarchy_dialog.h"
   "CDSimulation_autogen/include/views/system/ui_systemmanager.h"

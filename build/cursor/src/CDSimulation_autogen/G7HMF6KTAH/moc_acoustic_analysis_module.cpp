@@ -59,7 +59,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSAcousticAnalysisModuleENDCLASS[]
 };
 
 Q_CONSTINIT const QMetaObject AcousticAnalysisModule::staticMetaObject = { {
-    QMetaObject::SuperData::link<AnalysisModuleBase::staticMetaObject>(),
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
     qt_meta_stringdata_CLASSAcousticAnalysisModuleENDCLASS.offsetsAndSizes,
     qt_meta_data_CLASSAcousticAnalysisModuleENDCLASS,
     qt_static_metacall,
@@ -89,12 +89,12 @@ void *AcousticAnalysisModule::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSAcousticAnalysisModuleENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return AnalysisModuleBase::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
 int AcousticAnalysisModule::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = AnalysisModuleBase::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

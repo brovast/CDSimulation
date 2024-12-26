@@ -15,6 +15,7 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -63,6 +64,10 @@ public:
     QVBoxLayout *verticalLayout_preview;
     QLabel *labelImagePreview;
     QTextEdit *textEditContentPreview;
+    QLabel *labelAttachment;
+    QHBoxLayout *horizontalLayout_attachment;
+    QLineEdit *lineEditAttachmentPath;
+    QPushButton *btnSelectAttachment;
     QWidget *tabCompartmentData;
     QVBoxLayout *verticalLayout_cd;
     QHBoxLayout *horizontalLayout_cdpath;
@@ -79,6 +84,12 @@ public:
     QPushButton *btnCopyData;
     QPushButton *btnDelete;
     QWidget *tabUnderwaterData;
+    QGridLayout *gridLayout;
+    QHBoxLayout *horizontalLayout_csv_2;
+    QLabel *labelAcousticsPath;
+    QLineEdit *lineEditAcousticsPath;
+    QPushButton *btnSelectAcousticsCSV;
+    QTableWidget *tableAcoustics;
     QWidget *tabMaterialData;
     QVBoxLayout *verticalLayout_material;
     QHBoxLayout *horizontalLayout_csv;
@@ -119,6 +130,10 @@ public:
     QPushButton *btnSelectWorkDir;
     QLabel *labelTaskDesc;
     QTextEdit *textEditTaskDescription;
+    QLabel *labelTaskAttachment;
+    QHBoxLayout *horizontalLayout_taskAttachment;
+    QLineEdit *lineEditTaskAttachmentPath;
+    QPushButton *btnSelectTaskAttachment;
     QGroupBox *groupBoxModel;
     QFormLayout *formLayout_model;
     QLabel *labelModelType;
@@ -126,19 +141,12 @@ public:
     QLabel *labelModelPath;
     QLineEdit *lineEditModelPath;
     QGroupBox *groupBoxAnalysisType;
-    QVBoxLayout *verticalLayout_analysis;
-    QGroupBox *groupBoxModal;
-    QHBoxLayout *horizontalLayout_modal;
+    QHBoxLayout *horizontalLayout_analysis;
     QCheckBox *checkBoxDryModalAnalysis;
     QCheckBox *checkBoxWetModalAnalysis;
-    QGroupBox *groupBoxStatic;
-    QHBoxLayout *horizontalLayout_static;
-    QCheckBox *checkBoxShellStrengthAnalysis;
-    QCheckBox *checkBoxValveFrameStrengthAnalysis;
-    QGroupBox *groupBoxVibration;
-    QHBoxLayout *horizontalLayout_vibration;
-    QCheckBox *checkBoxSingleSideExcitationAnalysis;
-    QCheckBox *checkBoxDoubleSideExcitationAnalysis;
+    QCheckBox *checkBoxStaticAnalysis;
+    QCheckBox *checkBoxVibrationAnalysis;
+    QCheckBox *checkBoxAcousticAnalysis;
     QGroupBox *groupBoxAssign;
     QFormLayout *formLayout_assign;
     QLabel *labelAssignTo;
@@ -254,6 +262,27 @@ public:
 
         verticalLayout_basic->addLayout(horizontalLayout_content);
 
+        labelAttachment = new QLabel(tabBasicData);
+        labelAttachment->setObjectName("labelAttachment");
+
+        verticalLayout_basic->addWidget(labelAttachment);
+
+        horizontalLayout_attachment = new QHBoxLayout();
+        horizontalLayout_attachment->setObjectName("horizontalLayout_attachment");
+        lineEditAttachmentPath = new QLineEdit(tabBasicData);
+        lineEditAttachmentPath->setObjectName("lineEditAttachmentPath");
+        lineEditAttachmentPath->setReadOnly(true);
+
+        horizontalLayout_attachment->addWidget(lineEditAttachmentPath);
+
+        btnSelectAttachment = new QPushButton(tabBasicData);
+        btnSelectAttachment->setObjectName("btnSelectAttachment");
+
+        horizontalLayout_attachment->addWidget(btnSelectAttachment);
+
+
+        verticalLayout_basic->addLayout(horizontalLayout_attachment);
+
         tabWidgetDataManage->addTab(tabBasicData, QString());
         tabCompartmentData = new QWidget();
         tabCompartmentData->setObjectName("tabCompartmentData");
@@ -328,6 +357,34 @@ public:
         tabWidgetDataManage->addTab(tabCompartmentData, QString());
         tabUnderwaterData = new QWidget();
         tabUnderwaterData->setObjectName("tabUnderwaterData");
+        gridLayout = new QGridLayout(tabUnderwaterData);
+        gridLayout->setObjectName("gridLayout");
+        horizontalLayout_csv_2 = new QHBoxLayout();
+        horizontalLayout_csv_2->setObjectName("horizontalLayout_csv_2");
+        labelAcousticsPath = new QLabel(tabUnderwaterData);
+        labelAcousticsPath->setObjectName("labelAcousticsPath");
+
+        horizontalLayout_csv_2->addWidget(labelAcousticsPath);
+
+        lineEditAcousticsPath = new QLineEdit(tabUnderwaterData);
+        lineEditAcousticsPath->setObjectName("lineEditAcousticsPath");
+        lineEditAcousticsPath->setReadOnly(true);
+
+        horizontalLayout_csv_2->addWidget(lineEditAcousticsPath);
+
+        btnSelectAcousticsCSV = new QPushButton(tabUnderwaterData);
+        btnSelectAcousticsCSV->setObjectName("btnSelectAcousticsCSV");
+
+        horizontalLayout_csv_2->addWidget(btnSelectAcousticsCSV);
+
+
+        gridLayout->addLayout(horizontalLayout_csv_2, 0, 0, 1, 1);
+
+        tableAcoustics = new QTableWidget(tabUnderwaterData);
+        tableAcoustics->setObjectName("tableAcoustics");
+
+        gridLayout->addWidget(tableAcoustics, 1, 0, 1, 1);
+
         tabWidgetDataManage->addTab(tabUnderwaterData, QString());
         tabMaterialData = new QWidget();
         tabMaterialData->setObjectName("tabMaterialData");
@@ -531,6 +588,27 @@ public:
 
         formLayout_basic->setWidget(2, QFormLayout::FieldRole, textEditTaskDescription);
 
+        labelTaskAttachment = new QLabel(groupBoxBasicInfo);
+        labelTaskAttachment->setObjectName("labelTaskAttachment");
+
+        formLayout_basic->setWidget(3, QFormLayout::LabelRole, labelTaskAttachment);
+
+        horizontalLayout_taskAttachment = new QHBoxLayout();
+        horizontalLayout_taskAttachment->setObjectName("horizontalLayout_taskAttachment");
+        lineEditTaskAttachmentPath = new QLineEdit(groupBoxBasicInfo);
+        lineEditTaskAttachmentPath->setObjectName("lineEditTaskAttachmentPath");
+        lineEditTaskAttachmentPath->setReadOnly(true);
+
+        horizontalLayout_taskAttachment->addWidget(lineEditTaskAttachmentPath);
+
+        btnSelectTaskAttachment = new QPushButton(groupBoxBasicInfo);
+        btnSelectTaskAttachment->setObjectName("btnSelectTaskAttachment");
+
+        horizontalLayout_taskAttachment->addWidget(btnSelectTaskAttachment);
+
+
+        formLayout_basic->setLayout(3, QFormLayout::FieldRole, horizontalLayout_taskAttachment);
+
 
         verticalLayout_taskDefine->addWidget(groupBoxBasicInfo);
 
@@ -564,58 +642,32 @@ public:
 
         groupBoxAnalysisType = new QGroupBox(widgetTaskDefine);
         groupBoxAnalysisType->setObjectName("groupBoxAnalysisType");
-        verticalLayout_analysis = new QVBoxLayout(groupBoxAnalysisType);
-        verticalLayout_analysis->setObjectName("verticalLayout_analysis");
-        groupBoxModal = new QGroupBox(groupBoxAnalysisType);
-        groupBoxModal->setObjectName("groupBoxModal");
-        horizontalLayout_modal = new QHBoxLayout(groupBoxModal);
-        horizontalLayout_modal->setObjectName("horizontalLayout_modal");
-        checkBoxDryModalAnalysis = new QCheckBox(groupBoxModal);
+        horizontalLayout_analysis = new QHBoxLayout(groupBoxAnalysisType);
+        horizontalLayout_analysis->setObjectName("horizontalLayout_analysis");
+        checkBoxDryModalAnalysis = new QCheckBox(groupBoxAnalysisType);
         checkBoxDryModalAnalysis->setObjectName("checkBoxDryModalAnalysis");
 
-        horizontalLayout_modal->addWidget(checkBoxDryModalAnalysis);
+        horizontalLayout_analysis->addWidget(checkBoxDryModalAnalysis);
 
-        checkBoxWetModalAnalysis = new QCheckBox(groupBoxModal);
+        checkBoxWetModalAnalysis = new QCheckBox(groupBoxAnalysisType);
         checkBoxWetModalAnalysis->setObjectName("checkBoxWetModalAnalysis");
 
-        horizontalLayout_modal->addWidget(checkBoxWetModalAnalysis);
+        horizontalLayout_analysis->addWidget(checkBoxWetModalAnalysis);
 
+        checkBoxStaticAnalysis = new QCheckBox(groupBoxAnalysisType);
+        checkBoxStaticAnalysis->setObjectName("checkBoxStaticAnalysis");
 
-        verticalLayout_analysis->addWidget(groupBoxModal);
+        horizontalLayout_analysis->addWidget(checkBoxStaticAnalysis);
 
-        groupBoxStatic = new QGroupBox(groupBoxAnalysisType);
-        groupBoxStatic->setObjectName("groupBoxStatic");
-        horizontalLayout_static = new QHBoxLayout(groupBoxStatic);
-        horizontalLayout_static->setObjectName("horizontalLayout_static");
-        checkBoxShellStrengthAnalysis = new QCheckBox(groupBoxStatic);
-        checkBoxShellStrengthAnalysis->setObjectName("checkBoxShellStrengthAnalysis");
+        checkBoxVibrationAnalysis = new QCheckBox(groupBoxAnalysisType);
+        checkBoxVibrationAnalysis->setObjectName("checkBoxVibrationAnalysis");
 
-        horizontalLayout_static->addWidget(checkBoxShellStrengthAnalysis);
+        horizontalLayout_analysis->addWidget(checkBoxVibrationAnalysis);
 
-        checkBoxValveFrameStrengthAnalysis = new QCheckBox(groupBoxStatic);
-        checkBoxValveFrameStrengthAnalysis->setObjectName("checkBoxValveFrameStrengthAnalysis");
+        checkBoxAcousticAnalysis = new QCheckBox(groupBoxAnalysisType);
+        checkBoxAcousticAnalysis->setObjectName("checkBoxAcousticAnalysis");
 
-        horizontalLayout_static->addWidget(checkBoxValveFrameStrengthAnalysis);
-
-
-        verticalLayout_analysis->addWidget(groupBoxStatic);
-
-        groupBoxVibration = new QGroupBox(groupBoxAnalysisType);
-        groupBoxVibration->setObjectName("groupBoxVibration");
-        horizontalLayout_vibration = new QHBoxLayout(groupBoxVibration);
-        horizontalLayout_vibration->setObjectName("horizontalLayout_vibration");
-        checkBoxSingleSideExcitationAnalysis = new QCheckBox(groupBoxVibration);
-        checkBoxSingleSideExcitationAnalysis->setObjectName("checkBoxSingleSideExcitationAnalysis");
-
-        horizontalLayout_vibration->addWidget(checkBoxSingleSideExcitationAnalysis);
-
-        checkBoxDoubleSideExcitationAnalysis = new QCheckBox(groupBoxVibration);
-        checkBoxDoubleSideExcitationAnalysis->setObjectName("checkBoxDoubleSideExcitationAnalysis");
-
-        horizontalLayout_vibration->addWidget(checkBoxDoubleSideExcitationAnalysis);
-
-
-        verticalLayout_analysis->addWidget(groupBoxVibration);
+        horizontalLayout_analysis->addWidget(checkBoxAcousticAnalysis);
 
 
         verticalLayout_taskDefine->addWidget(groupBoxAnalysisType);
@@ -717,7 +769,7 @@ public:
         SystemManager->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SystemManager);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1200, 20));
+        menubar->setGeometry(QRect(0, 0, 1200, 33));
         SystemManager->setMenuBar(menubar);
         statusbar = new QStatusBar(SystemManager);
         statusbar->setObjectName("statusbar");
@@ -725,8 +777,8 @@ public:
 
         retranslateUi(SystemManager);
 
-        tabWidgetMain->setCurrentIndex(1);
-        tabWidgetDataManage->setCurrentIndex(3);
+        tabWidgetMain->setCurrentIndex(0);
+        tabWidgetDataManage->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(SystemManager);
@@ -739,6 +791,8 @@ public:
         btnSelectBasicDataPath->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\350\267\257\345\276\204", nullptr));
         btnAddBasicFolder->setText(QCoreApplication::translate("SystemManager", "\346\267\273\345\212\240\346\226\207\344\273\266\345\244\271", nullptr));
         btnDeleteBasicData->setText(QCoreApplication::translate("SystemManager", "\345\210\240\351\231\244", nullptr));
+        labelAttachment->setText(QCoreApplication::translate("SystemManager", "\351\231\204\344\273\266\357\274\232", nullptr));
+        btnSelectAttachment->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\351\231\204\344\273\266", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabBasicData), QCoreApplication::translate("SystemManager", "\345\237\272\347\241\200\346\225\260\346\215\256\345\272\223", nullptr));
         labelCDDataPath->setText(QCoreApplication::translate("SystemManager", "\346\225\260\346\215\256\350\267\257\345\276\204\357\274\232", nullptr));
         btnSelectCDDataPath->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\350\267\257\345\276\204", nullptr));
@@ -747,7 +801,9 @@ public:
         btnCopyData->setText(QCoreApplication::translate("SystemManager", "\346\225\260\346\215\256\345\244\215\345\210\266", nullptr));
         btnDelete->setText(QCoreApplication::translate("SystemManager", "\345\210\240\351\231\244", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabCompartmentData), QCoreApplication::translate("SystemManager", "\350\210\261\346\256\265\346\225\260\346\215\256\345\272\223", nullptr));
-        tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabUnderwaterData), QCoreApplication::translate("SystemManager", "\346\260\264\344\270\213\344\273\277\347\234\237\345\272\223", nullptr));
+        labelAcousticsPath->setText(QCoreApplication::translate("SystemManager", "CSV\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
+        btnSelectAcousticsCSV->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\346\226\207\344\273\266", nullptr));
+        tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabUnderwaterData), QCoreApplication::translate("SystemManager", "\345\243\260\345\255\246\345\217\202\346\225\260\345\272\223", nullptr));
         labelCSVPath->setText(QCoreApplication::translate("SystemManager", "CSV\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
         btnSelectCSV->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\346\226\207\344\273\266", nullptr));
         tabWidgetDataManage->setTabText(tabWidgetDataManage->indexOf(tabMaterialData), QCoreApplication::translate("SystemManager", "\346\235\220\346\226\231\345\272\223", nullptr));
@@ -786,19 +842,17 @@ public:
         labelWorkDir->setText(QCoreApplication::translate("SystemManager", "\345\267\245\344\275\234\347\233\256\345\275\225\357\274\232", nullptr));
         btnSelectWorkDir->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\347\233\256\345\275\225", nullptr));
         labelTaskDesc->setText(QCoreApplication::translate("SystemManager", "\344\273\273\345\212\241\346\217\217\350\277\260\357\274\232", nullptr));
+        labelTaskAttachment->setText(QCoreApplication::translate("SystemManager", "\351\231\204\344\273\266\357\274\232", nullptr));
+        btnSelectTaskAttachment->setText(QCoreApplication::translate("SystemManager", "\351\200\211\346\213\251\351\231\204\344\273\266", nullptr));
         groupBoxModel->setTitle(QCoreApplication::translate("SystemManager", "\350\210\261\346\256\265\346\250\241\345\236\213", nullptr));
         labelModelType->setText(QCoreApplication::translate("SystemManager", "\345\236\213\345\217\267\351\200\211\346\213\251\357\274\232", nullptr));
         labelModelPath->setText(QCoreApplication::translate("SystemManager", "\346\250\241\345\236\213\350\267\257\345\276\204\357\274\232", nullptr));
         groupBoxAnalysisType->setTitle(QCoreApplication::translate("SystemManager", "\345\210\206\346\236\220\347\261\273\345\236\213", nullptr));
-        groupBoxModal->setTitle(QCoreApplication::translate("SystemManager", "\346\250\241\346\200\201\345\210\206\346\236\220", nullptr));
         checkBoxDryModalAnalysis->setText(QCoreApplication::translate("SystemManager", "\345\271\262\346\250\241\346\200\201\345\210\206\346\236\220", nullptr));
         checkBoxWetModalAnalysis->setText(QCoreApplication::translate("SystemManager", "\346\271\277\346\250\241\346\200\201\345\210\206\346\236\220", nullptr));
-        groupBoxStatic->setTitle(QCoreApplication::translate("SystemManager", "\351\235\231\345\212\233\345\255\246\345\210\206\346\236\220", nullptr));
-        checkBoxShellStrengthAnalysis->setText(QCoreApplication::translate("SystemManager", "\345\243\263\344\275\223\345\274\272\345\272\246\345\210\206\346\236\220", nullptr));
-        checkBoxValveFrameStrengthAnalysis->setText(QCoreApplication::translate("SystemManager", "\351\230\200\346\236\266\345\274\272\345\272\246\345\210\206\346\236\220", nullptr));
-        groupBoxVibration->setTitle(QCoreApplication::translate("SystemManager", "\346\214\257\345\212\250\345\210\206\346\236\220", nullptr));
-        checkBoxSingleSideExcitationAnalysis->setText(QCoreApplication::translate("SystemManager", "\345\215\225\350\210\267\346\277\200\345\212\261\345\210\206\346\236\220", nullptr));
-        checkBoxDoubleSideExcitationAnalysis->setText(QCoreApplication::translate("SystemManager", "\345\217\214\350\210\267\346\277\200\345\212\261\345\210\206\346\236\220", nullptr));
+        checkBoxStaticAnalysis->setText(QCoreApplication::translate("SystemManager", "\351\235\231\345\212\233\345\255\246\345\210\206\346\236\220", nullptr));
+        checkBoxVibrationAnalysis->setText(QCoreApplication::translate("SystemManager", "\346\214\257\345\212\250\345\210\206\346\236\220", nullptr));
+        checkBoxAcousticAnalysis->setText(QCoreApplication::translate("SystemManager", "\345\243\260\345\255\246\345\210\206\346\236\220", nullptr));
         groupBoxAssign->setTitle(QCoreApplication::translate("SystemManager", "\344\273\273\345\212\241\346\214\207\346\264\276", nullptr));
         labelAssignTo->setText(QCoreApplication::translate("SystemManager", "\346\214\207\346\264\276\347\273\231\357\274\232", nullptr));
         labelAssignDesc->setText(QCoreApplication::translate("SystemManager", "\346\214\207\346\264\276\350\257\264\346\230\216\357\274\232", nullptr));

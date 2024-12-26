@@ -301,53 +301,29 @@ views/analysis/acoustic_analysis_module.cpp.s:
 	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/acoustic_analysis_module.cpp.s
 .PHONY : views/analysis/acoustic_analysis_module.cpp.s
 
-views/analysis/analysis_module_base.obj: views/analysis/analysis_module_base.cpp.obj
-.PHONY : views/analysis/analysis_module_base.obj
+views/analysis/dry_modal_analysis_module.obj: views/analysis/dry_modal_analysis_module.cpp.obj
+.PHONY : views/analysis/dry_modal_analysis_module.obj
 
 # target to build an object file
-views/analysis/analysis_module_base.cpp.obj:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.obj
-.PHONY : views/analysis/analysis_module_base.cpp.obj
+views/analysis/dry_modal_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/dry_modal_analysis_module.cpp.obj
+.PHONY : views/analysis/dry_modal_analysis_module.cpp.obj
 
-views/analysis/analysis_module_base.i: views/analysis/analysis_module_base.cpp.i
-.PHONY : views/analysis/analysis_module_base.i
-
-# target to preprocess a source file
-views/analysis/analysis_module_base.cpp.i:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.i
-.PHONY : views/analysis/analysis_module_base.cpp.i
-
-views/analysis/analysis_module_base.s: views/analysis/analysis_module_base.cpp.s
-.PHONY : views/analysis/analysis_module_base.s
-
-# target to generate assembly for a file
-views/analysis/analysis_module_base.cpp.s:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/analysis_module_base.cpp.s
-.PHONY : views/analysis/analysis_module_base.cpp.s
-
-views/analysis/modal_analysis_module.obj: views/analysis/modal_analysis_module.cpp.obj
-.PHONY : views/analysis/modal_analysis_module.obj
-
-# target to build an object file
-views/analysis/modal_analysis_module.cpp.obj:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.obj
-.PHONY : views/analysis/modal_analysis_module.cpp.obj
-
-views/analysis/modal_analysis_module.i: views/analysis/modal_analysis_module.cpp.i
-.PHONY : views/analysis/modal_analysis_module.i
+views/analysis/dry_modal_analysis_module.i: views/analysis/dry_modal_analysis_module.cpp.i
+.PHONY : views/analysis/dry_modal_analysis_module.i
 
 # target to preprocess a source file
-views/analysis/modal_analysis_module.cpp.i:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.i
-.PHONY : views/analysis/modal_analysis_module.cpp.i
+views/analysis/dry_modal_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/dry_modal_analysis_module.cpp.i
+.PHONY : views/analysis/dry_modal_analysis_module.cpp.i
 
-views/analysis/modal_analysis_module.s: views/analysis/modal_analysis_module.cpp.s
-.PHONY : views/analysis/modal_analysis_module.s
+views/analysis/dry_modal_analysis_module.s: views/analysis/dry_modal_analysis_module.cpp.s
+.PHONY : views/analysis/dry_modal_analysis_module.s
 
 # target to generate assembly for a file
-views/analysis/modal_analysis_module.cpp.s:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/modal_analysis_module.cpp.s
-.PHONY : views/analysis/modal_analysis_module.cpp.s
+views/analysis/dry_modal_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/dry_modal_analysis_module.cpp.s
+.PHONY : views/analysis/dry_modal_analysis_module.cpp.s
 
 views/analysis/static_analysis_module.obj: views/analysis/static_analysis_module.cpp.obj
 .PHONY : views/analysis/static_analysis_module.obj
@@ -373,30 +349,6 @@ views/analysis/static_analysis_module.cpp.s:
 	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/static_analysis_module.cpp.s
 .PHONY : views/analysis/static_analysis_module.cpp.s
 
-views/analysis/underwater_analysis_module.obj: views/analysis/underwater_analysis_module.cpp.obj
-.PHONY : views/analysis/underwater_analysis_module.obj
-
-# target to build an object file
-views/analysis/underwater_analysis_module.cpp.obj:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.obj
-.PHONY : views/analysis/underwater_analysis_module.cpp.obj
-
-views/analysis/underwater_analysis_module.i: views/analysis/underwater_analysis_module.cpp.i
-.PHONY : views/analysis/underwater_analysis_module.i
-
-# target to preprocess a source file
-views/analysis/underwater_analysis_module.cpp.i:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.i
-.PHONY : views/analysis/underwater_analysis_module.cpp.i
-
-views/analysis/underwater_analysis_module.s: views/analysis/underwater_analysis_module.cpp.s
-.PHONY : views/analysis/underwater_analysis_module.s
-
-# target to generate assembly for a file
-views/analysis/underwater_analysis_module.cpp.s:
-	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/underwater_analysis_module.cpp.s
-.PHONY : views/analysis/underwater_analysis_module.cpp.s
-
 views/analysis/vibration_analysis_module.obj: views/analysis/vibration_analysis_module.cpp.obj
 .PHONY : views/analysis/vibration_analysis_module.obj
 
@@ -420,6 +372,30 @@ views/analysis/vibration_analysis_module.s: views/analysis/vibration_analysis_mo
 views/analysis/vibration_analysis_module.cpp.s:
 	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/vibration_analysis_module.cpp.s
 .PHONY : views/analysis/vibration_analysis_module.cpp.s
+
+views/analysis/wet_modal_analysis_module.obj: views/analysis/wet_modal_analysis_module.cpp.obj
+.PHONY : views/analysis/wet_modal_analysis_module.obj
+
+# target to build an object file
+views/analysis/wet_modal_analysis_module.cpp.obj:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/wet_modal_analysis_module.cpp.obj
+.PHONY : views/analysis/wet_modal_analysis_module.cpp.obj
+
+views/analysis/wet_modal_analysis_module.i: views/analysis/wet_modal_analysis_module.cpp.i
+.PHONY : views/analysis/wet_modal_analysis_module.i
+
+# target to preprocess a source file
+views/analysis/wet_modal_analysis_module.cpp.i:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/wet_modal_analysis_module.cpp.i
+.PHONY : views/analysis/wet_modal_analysis_module.cpp.i
+
+views/analysis/wet_modal_analysis_module.s: views/analysis/wet_modal_analysis_module.cpp.s
+.PHONY : views/analysis/wet_modal_analysis_module.s
+
+# target to generate assembly for a file
+views/analysis/wet_modal_analysis_module.cpp.s:
+	cd /d D:\XMH_PROJECT\QT\CDSimulation\build\cursor && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\CDSimulation.dir\build.make src/CMakeFiles/CDSimulation.dir/views/analysis/wet_modal_analysis_module.cpp.s
+.PHONY : views/analysis/wet_modal_analysis_module.cpp.s
 
 views/config_dialog.obj: views/config_dialog.cpp.obj
 .PHONY : views/config_dialog.obj
@@ -690,21 +666,18 @@ help:
 	@echo ... views/analysis/acoustic_analysis_module.obj
 	@echo ... views/analysis/acoustic_analysis_module.i
 	@echo ... views/analysis/acoustic_analysis_module.s
-	@echo ... views/analysis/analysis_module_base.obj
-	@echo ... views/analysis/analysis_module_base.i
-	@echo ... views/analysis/analysis_module_base.s
-	@echo ... views/analysis/modal_analysis_module.obj
-	@echo ... views/analysis/modal_analysis_module.i
-	@echo ... views/analysis/modal_analysis_module.s
+	@echo ... views/analysis/dry_modal_analysis_module.obj
+	@echo ... views/analysis/dry_modal_analysis_module.i
+	@echo ... views/analysis/dry_modal_analysis_module.s
 	@echo ... views/analysis/static_analysis_module.obj
 	@echo ... views/analysis/static_analysis_module.i
 	@echo ... views/analysis/static_analysis_module.s
-	@echo ... views/analysis/underwater_analysis_module.obj
-	@echo ... views/analysis/underwater_analysis_module.i
-	@echo ... views/analysis/underwater_analysis_module.s
 	@echo ... views/analysis/vibration_analysis_module.obj
 	@echo ... views/analysis/vibration_analysis_module.i
 	@echo ... views/analysis/vibration_analysis_module.s
+	@echo ... views/analysis/wet_modal_analysis_module.obj
+	@echo ... views/analysis/wet_modal_analysis_module.i
+	@echo ... views/analysis/wet_modal_analysis_module.s
 	@echo ... views/config_dialog.obj
 	@echo ... views/config_dialog.i
 	@echo ... views/config_dialog.s

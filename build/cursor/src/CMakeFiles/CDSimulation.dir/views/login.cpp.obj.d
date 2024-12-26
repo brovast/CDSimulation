@@ -1291,14 +1291,8 @@ src/CMakeFiles/CDSimulation.dir/views/login.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCharts/QValueAxis \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\workbench.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidgetItem \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/modal_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/analysis_module_base.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidget \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTreeView \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QPushButton \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QGroupBox \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/dry_modal_analysis_module.h \
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/wet_modal_analysis_module.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/static_analysis_module.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/vibration_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/acoustic_analysis_module.h \
- D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/underwater_analysis_module.h
+ D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/acoustic_analysis_module.h

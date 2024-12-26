@@ -211,7 +211,7 @@ QList<Database::UserInfo> Database::getUserList(int statusFilter)
             users.append(user);
         }
     } else {
-        qCritical() << "获取用户列表���败:" << query.lastError().text();
+        qCritical() << "获取用户列表失败:" << query.lastError().text();
     }
     
     return users;
@@ -259,7 +259,7 @@ bool Database::deleteUser(int userId)
     query.addBindValue(userId);
     
     if (!query.exec()) {
-        qCritical() << "删除用户��败:" << query.lastError().text();
+        qCritical() << "删除用户失败:" << query.lastError().text();
         return false;
     }
     

@@ -57,6 +57,10 @@ public:
     QLabel *labelCreateTimeValue;
     QLabel *labelDescription;
     QTextBrowser *textBrowserDescription;
+    QLabel *labelAttachment;
+    QHBoxLayout *horizontalLayout_attachment;
+    QLineEdit *lineEditAttachmentPath;
+    QPushButton *btnViewAttachment;
     QGroupBox *groupBoxAnalysisTypes;
     QVBoxLayout *verticalLayout_4;
     QListWidget *listWidgetAnalysisTypes;
@@ -169,6 +173,27 @@ public:
 
         formLayout->setWidget(2, QFormLayout::FieldRole, textBrowserDescription);
 
+        labelAttachment = new QLabel(groupBoxBasicInfo);
+        labelAttachment->setObjectName("labelAttachment");
+
+        formLayout->setWidget(3, QFormLayout::LabelRole, labelAttachment);
+
+        horizontalLayout_attachment = new QHBoxLayout();
+        horizontalLayout_attachment->setObjectName("horizontalLayout_attachment");
+        lineEditAttachmentPath = new QLineEdit(groupBoxBasicInfo);
+        lineEditAttachmentPath->setObjectName("lineEditAttachmentPath");
+        lineEditAttachmentPath->setReadOnly(true);
+
+        horizontalLayout_attachment->addWidget(lineEditAttachmentPath);
+
+        btnViewAttachment = new QPushButton(groupBoxBasicInfo);
+        btnViewAttachment->setObjectName("btnViewAttachment");
+
+        horizontalLayout_attachment->addWidget(btnViewAttachment);
+
+
+        formLayout->setLayout(3, QFormLayout::FieldRole, horizontalLayout_attachment);
+
 
         verticalLayout_3->addWidget(groupBoxBasicInfo);
 
@@ -253,6 +278,8 @@ public:
         labelCreateTime->setText(QCoreApplication::translate("Workbench", "\345\210\233\345\273\272\346\227\266\351\227\264\357\274\232", nullptr));
         labelCreateTimeValue->setText(QString());
         labelDescription->setText(QCoreApplication::translate("Workbench", "\344\273\273\345\212\241\346\217\217\350\277\260\357\274\232", nullptr));
+        labelAttachment->setText(QCoreApplication::translate("Workbench", "\351\231\204\344\273\266\357\274\232", nullptr));
+        btnViewAttachment->setText(QCoreApplication::translate("Workbench", "\346\237\245\347\234\213\351\231\204\344\273\266", nullptr));
         groupBoxAnalysisTypes->setTitle(QCoreApplication::translate("Workbench", "\345\210\206\346\236\220\347\261\273\345\236\213", nullptr));
         btnAcceptTask->setText(QCoreApplication::translate("Workbench", "\346\216\245\346\224\266\344\273\273\345\212\241", nullptr));
         btnCompleteTask->setText(QCoreApplication::translate("Workbench", "\345\256\214\346\210\220\344\273\273\345\212\241", nullptr));

@@ -45,31 +45,29 @@ set(PROJECT_UI
 
 # 添加分析模块源文件
 set(ANALYSIS_SOURCES
-    views/analysis/analysis_module_base.cpp
-    views/analysis/modal_analysis_module.cpp
+    views/analysis/dry_modal_analysis_module.cpp
+    views/analysis/wet_modal_analysis_module.cpp
     views/analysis/static_analysis_module.cpp
     views/analysis/vibration_analysis_module.cpp
     views/analysis/acoustic_analysis_module.cpp
-    views/analysis/underwater_analysis_module.cpp
 )
 
 # 添加分析模块头文件
 set(ANALYSIS_HEADERS
-    views/analysis/analysis_module_base.h
-    views/analysis/modal_analysis_module.h
+    views/analysis/dry_modal_analysis_module.h
+    views/analysis/wet_modal_analysis_module.h
     views/analysis/static_analysis_module.h
     views/analysis/vibration_analysis_module.h
     views/analysis/acoustic_analysis_module.h
-    views/analysis/underwater_analysis_module.h
 )
 
 # 添加分析模块UI文件
 set(ANALYSIS_UI
-    views/analysis/modal_analysis_module.ui
+    views/analysis/dry_modal_analysis_module.ui
+    views/analysis/wet_modal_analysis_module.ui
     views/analysis/static_analysis_module.ui
     views/analysis/vibration_analysis_module.ui
     views/analysis/acoustic_analysis_module.ui
-    views/analysis/underwater_analysis_module.ui
 )
 
 # 将ANALYSIS_UI添加到PROJECT_UI中
