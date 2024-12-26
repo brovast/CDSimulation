@@ -1,5 +1,7 @@
 D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/moc_workbench.cpp: D:/XMH_PROJECT/QT/CDSimulation/src/views/workbench.h \
   D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/moc_predefs.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDateTime \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20functional.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20memory.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -19,6 +21,7 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcalendar.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qchar.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcompare.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -32,6 +35,7 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcontiguouscache.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatetime.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdebug.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qendian.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -147,6 +151,11 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qvalidator.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/QSqlDatabase \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qsqldatabase.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsql-config.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlexports.h \
+  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlglobal.h \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMainWindow \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QTableWidgetItem \
   D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
@@ -369,6 +378,7 @@ D:/XMH_PROJECT/QT/CDSimulation/build/cursor/src/CDSimulation_autogen/DWW7M6GQBY/
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/IndSoftware/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/XMH_PROJECT/QT/CDSimulation/src/core/database.h \
   D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/acoustic_analysis_module.h \
   D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/dry_modal_analysis_module.h \
   D:/XMH_PROJECT/QT/CDSimulation/src/views/analysis/static_analysis_module.h \

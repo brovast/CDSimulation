@@ -47,6 +47,7 @@ public:
         QString modelPath;
         QString modelType;
         int assignedTo;
+        QString assignedUsername;
         QString assignDescription;
         int status;
         int createdBy;
@@ -76,12 +77,15 @@ public:
     
     bool fixAdminPermissions();
 
-    QList<TaskInfo> getTaskList(int statusFilter = -1, const QString& typeFilter = QString());
+    QList<TaskInfo> getTaskList(int statusFilter = -1, int assignedTo = -1);
     bool addTask(const TaskInfo& task, const QList<TaskAnalysisType>& analysisTypes);
     bool updateTaskStatus(int taskId, int status);
     bool deleteTask(int taskId);
     bool getTaskInfo(int taskId, TaskInfo& taskInfo);
     QList<TaskAnalysisType> getTaskAnalysisTypes(int taskId);
+
+    QList<TaskInfo> getTaskList(int statusFilter = -1, const QString& typeFilter = QString());
+    QList<TaskInfo> getTaskListByUser(int statusFilter = -1, int assignedTo = -1);
 
 private:
     bool initDefaultAdmin();

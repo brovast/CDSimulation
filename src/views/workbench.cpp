@@ -79,7 +79,7 @@ void Workbench::loadTaskList()
 {
     // 设置表头
     QStringList headers;
-    headers << "ID" << "任务名称" << "创建时间" << "任务类型" << "状态" << "操作";
+    headers << "ID" << "任务名称" << "创建时间" << "任务型号" << "责任人" << "状态" << "操作";
     ui->tableTaskList->setColumnCount(headers.size());
     ui->tableTaskList->setHorizontalHeaderLabels(headers);
     
@@ -90,8 +90,8 @@ void Workbench::loadTaskList()
     // 获取状态筛选条件
     int statusFilter = ui->comboBoxStatus->currentIndex() - 1; // -1表示全部
     
-    // 从数据库获取任务列表
-    QList<Database::TaskInfo> tasks = Database::getInstance().getTaskList(statusFilter);
+    // 从数据库获取任务列表，只获取指派给当前用户的任务
+    QList<Database::TaskInfo> tasks = Database::getInstance().getTaskListByUser(statusFilter, m_userId);
     
     // 更新表格
     for (const auto& task : tasks) {
@@ -103,7 +103,8 @@ void Workbench::loadTaskList()
         ui->tableTaskList->setItem(row, 1, new QTableWidgetItem(task.name));
         ui->tableTaskList->setItem(row, 2, new QTableWidgetItem(task.createTime.toString("yyyy-MM-dd hh:mm:ss")));
         ui->tableTaskList->setItem(row, 3, new QTableWidgetItem(task.modelType));
-        ui->tableTaskList->setItem(row, 4, new QTableWidgetItem(getStatusText(task.status)));
+        ui->tableTaskList->setItem(row, 4, new QTableWidgetItem(task.assignedUsername));
+        ui->tableTaskList->setItem(row, 5, new QTableWidgetItem(getStatusText(task.status)));
         
         // 添加操作按钮
         auto btnWidget = new QWidget(ui->tableTaskList);
@@ -111,26 +112,26 @@ void Workbench::loadTaskList()
         btnLayout->setContentsMargins(2, 2, 2, 2);
         btnLayout->setSpacing(2);
         
-        auto viewBtn = new QPushButton("查看", btnWidget);
+        auto viewBtn = new QPushButton("执行", btnWidget);
         viewBtn->setFixedSize(60, 25);
         connect(viewBtn, &QPushButton::clicked, this, [this, task]() {
-            // TODO: 实现查看功能
-            QMessageBox::information(this, "提示", QString("查看任务 %1").arg(task.id));
+            switchToExecutionTab(task);
         });
         
         btnLayout->addWidget(viewBtn);
         btnLayout->addStretch();
         
-        ui->tableTaskList->setCellWidget(row, 5, btnWidget);
+        ui->tableTaskList->setCellWidget(row, 6, btnWidget);
     }
     
     // 调整列宽
-    ui->tableTaskList->setColumnWidth(0, 60);  // ID列
-    ui->tableTaskList->setColumnWidth(1, 200); // 任务名称列
-    ui->tableTaskList->setColumnWidth(2, 150); // 创建时间列
-    ui->tableTaskList->setColumnWidth(3, 150); // 任务类型列
-    ui->tableTaskList->setColumnWidth(4, 80);  // 状态列
-    ui->tableTaskList->setColumnWidth(5, 100); // 操作列
+    ui->tableTaskList->setColumnWidth(0, 60);   // ID列
+    ui->tableTaskList->setColumnWidth(1, 150);  // 任务名称列
+    ui->tableTaskList->setColumnWidth(2, 150);  // 创建时间列
+    ui->tableTaskList->setColumnWidth(3, 100);  // 任务型号列
+    ui->tableTaskList->setColumnWidth(4, 100);  // 责任人列
+    ui->tableTaskList->setColumnWidth(5, 80);   // 状态列
+    ui->tableTaskList->setColumnWidth(6, 100);  // 操作列
 }
 
 void Workbench::loadTaskDetails(int taskId)
@@ -282,12 +283,10 @@ void Workbench::setupAnalysisModules()
     m_acousticModule = new AcousticAnalysisModule(this);
 
     // 获取任务执行标签页中的分析模块选择器
-    QTabWidget* analysisModules = ui->tabTaskExecution->findChild<QTabWidget*>("tabAnalysisModules");
-    if (!analysisModules) {
-        analysisModules = new QTabWidget(ui->tabTaskExecution);
-        auto layout = new QVBoxLayout(ui->tabTaskExecution);
-        layout->addWidget(analysisModules);
-    }
+    QTabWidget* analysisModules = new QTabWidget(ui->tabTaskExecution);
+    analysisModules->setObjectName("tabAnalysisModules");  // 设置对象名
+    auto layout = new QVBoxLayout(ui->tabTaskExecution);
+    layout->addWidget(analysisModules);
 
     // 添加各个分析模块
     analysisModules->addTab(m_dryModalModule, "干模态分析");
@@ -295,4 +294,56 @@ void Workbench::setupAnalysisModules()
     analysisModules->addTab(m_staticModule, "静力学分析");
     analysisModules->addTab(m_vibrationModule, "振动分析");
     analysisModules->addTab(m_acousticModule, "声学分析");
+
+    // 初始时禁用所有分析模块
+    for (int i = 0; i < analysisModules->count(); ++i) {
+        analysisModules->setTabEnabled(i, false);
+        analysisModules->tabBar()->setTabTextColor(i, QColor(128,128,128));
+    }
+}
+
+void Workbench::switchToExecutionTab(const Database::TaskInfo& task)
+{
+    // 保存当前任务信息
+    m_currentTaskId = task.id;
+    m_currentTaskName = task.name;
+    m_currentTaskModel = task.modelType;
+    m_currentTaskDir = task.workDir;
+    
+    // 获取任务的分析类型列表
+    QList<Database::TaskAnalysisType> analysisTypes = 
+        Database::getInstance().getTaskAnalysisTypes(task.id);
+    ui->listWidgetAnalysisTypes->clear();
+    for (const auto& type : analysisTypes) {
+        ui->listWidgetAnalysisTypes->addItem(type.analysisType);
+    }
+    
+    // 更新状态栏显示当前任务信息
+    statusBar()->showMessage(QString("当前任务：%1-%2-%3").arg(task.id).arg(task.name).arg(task.modelType));
+    
+    // 更新分析模块状态
+    updateAnalysisModulesState();
+    
+    // 切换到任务执行标签页
+    ui->tabWidgetMain->setCurrentWidget(ui->tabTaskExecution);
+}
+
+void Workbench::updateAnalysisModulesState()
+{
+    QStringList analysisTypes;
+    for (int i = 0; i < ui->listWidgetAnalysisTypes->count(); ++i) {
+        analysisTypes << ui->listWidgetAnalysisTypes->item(i)->text();
+    }
+
+    QTabWidget* analysisModules = ui->tabTaskExecution->findChild<QTabWidget*>("tabAnalysisModules");
+    if (!analysisModules) return;
+
+    // 根据分析类型启用/禁用对应标签页
+    for (int i = 0; i < analysisModules->count(); ++i) {
+        QString tabText = analysisModules->tabText(i);
+        bool enabled = analysisTypes.contains(tabText);
+        analysisModules->setTabEnabled(i, enabled);
+        // 设置标签页样式
+        analysisModules->tabBar()->setTabTextColor(i, enabled ? QColor(0,0,0) : QColor(128,128,128));
+    }
 } 

@@ -973,9 +973,9 @@ void SystemManager::onSelectAcousticsPath()
     );
     
     if (!filePath.isEmpty()) {
-        m_currentMaterialCSVPath = filePath;
-        ui->lineEditCSVPath->setText(filePath);
-        loadCSVData(filePath);
+        m_currentAcousticsCSVPath = filePath;
+        ui->lineEditAcousticsPath->setText(filePath);
+        loadAcousticsCSV(filePath);
         
         // 保存声学参数库CSV文件路径到配置文件
         Config::getInstance().setValue("AcousticsCSV/Path", filePath);

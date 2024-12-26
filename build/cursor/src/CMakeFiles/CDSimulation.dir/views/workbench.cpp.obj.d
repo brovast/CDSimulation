@@ -381,6 +381,17 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qstyle.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtabbar.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/XMH_PROJECT/QT/CDSimulation/src/core/database.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qobject.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/QSqlDatabase \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qsqldatabase.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlglobal.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsql-config.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlexports.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDateTime \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcalendar.h \
  D:\XMH_PROJECT\QT\CDSimulation\src\views\analysis/dry_modal_analysis_module.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qwidget.h \
@@ -452,17 +463,6 @@ src/CMakeFiles/CDSimulation.dir/views/workbench.cpp.obj: \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qtextedit.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QWidget \
- D:/XMH_PROJECT/QT/CDSimulation/src/core/database.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QObject \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qobject.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/QSqlDatabase \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qsqldatabase.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlglobal.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsql-config.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtSql/qtsqlexports.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/QDateTime \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qdatetime.h \
- D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtCore/qcalendar.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/IndSoftware/Qt/6.7.3/mingw_64/include/QtWidgets/qdialog.h \

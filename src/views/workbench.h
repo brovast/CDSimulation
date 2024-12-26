@@ -1,6 +1,7 @@
 #pragma once
 #include <QMainWindow>
 #include <QTableWidgetItem>
+#include "../core/database.h"
 #include "analysis/dry_modal_analysis_module.h"
 #include "analysis/wet_modal_analysis_module.h"
 #include "analysis/static_analysis_module.h"
@@ -51,4 +52,14 @@ private:
     AcousticAnalysisModule* m_acousticModule;
 
     void setupAnalysisModules();
+
+    // 当前执行的任务信息
+    int m_currentTaskId;
+    QString m_currentTaskName;
+    QString m_currentTaskModel;
+    QString m_currentTaskDir;
+    
+    // 新增函数
+    void switchToExecutionTab(const Database::TaskInfo& task);
+    void updateAnalysisModulesState();
 }; 

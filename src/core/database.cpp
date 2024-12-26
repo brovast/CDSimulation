@@ -140,7 +140,7 @@ bool Database::createTables()
                    "status INTEGER DEFAULT 0,"             // 状态(0:待处理 1:进行中 2:已完成 3:已取消)
                    "created_by INTEGER,"                   // 创建人
                    "create_time DATETIME,"                 // 创建时间
-                   "update_time DATETIME,"                 // 更新时间
+                   "update_time DATETIME,"                 // ��新时间
                    "FOREIGN KEY(assigned_to) REFERENCES users(id),"
                    "FOREIGN KEY(created_by) REFERENCES users(id))")) {
         qCritical() << "创建任务表失败:" << query.lastError().text();
@@ -429,23 +429,22 @@ bool Database::fixAdminPermissions()
     return true;
 }
 
-QList<Database::TaskInfo> Database::getTaskList(int statusFilter, const QString& typeFilter)
+QList<Database::TaskInfo> Database::getTaskList(int statusFilter, int assignedTo)
 {
     QList<TaskInfo> tasks;
     QSqlQuery query;
     
-    QString sql = "SELECT DISTINCT t.* FROM tasks t";
-    if (!typeFilter.isEmpty()) {
-        sql += " LEFT JOIN task_analysis_types at ON t.id = at.task_id";
-    }
-    sql += " WHERE 1=1";
+    QString sql = "SELECT t.*, u.username as assigned_username FROM tasks t "
+                 "LEFT JOIN users u ON t.assigned_to = u.id WHERE 1=1";
     
     if (statusFilter >= 0) {
         sql += " AND t.status = " + QString::number(statusFilter);
     }
-    if (!typeFilter.isEmpty()) {
-        sql += " AND at.analysis_type = '" + typeFilter + "'";
+    
+    if (assignedTo >= 0) {
+        sql += " AND t.assigned_to = " + QString::number(assignedTo);
     }
+    
     sql += " ORDER BY t.create_time DESC";
     
     if (query.exec(sql)) {
@@ -458,6 +457,7 @@ QList<Database::TaskInfo> Database::getTaskList(int statusFilter, const QString&
             task.modelPath = query.value("model_path").toString();
             task.modelType = query.value("model_type").toString();
             task.assignedTo = query.value("assigned_to").toInt();
+            task.assignedUsername = query.value("assigned_username").toString();
             task.assignDescription = query.value("assign_description").toString();
             task.status = query.value("status").toInt();
             task.createdBy = query.value("created_by").toInt();
@@ -610,4 +610,94 @@ bool Database::updateTaskStatus(int taskId, int status)
     }
     
     return true;
+}
+
+QList<Database::TaskInfo> Database::getTaskListByUser(int statusFilter, int assignedTo)
+{
+    QList<TaskInfo> tasks;
+    QSqlQuery query;
+    
+    QString sql = "SELECT t.*, u.username as assigned_username FROM tasks t "
+                 "LEFT JOIN users u ON t.assigned_to = u.id WHERE 1=1";
+    
+    if (statusFilter >= 0) {
+        sql += " AND t.status = " + QString::number(statusFilter);
+    }
+    
+    if (assignedTo >= 0) {
+        sql += " AND t.assigned_to = " + QString::number(assignedTo);
+    }
+    
+    sql += " ORDER BY t.create_time DESC";
+    
+    if (query.exec(sql)) {
+        while (query.next()) {
+            TaskInfo task;
+            task.id = query.value("id").toInt();
+            task.name = query.value("name").toString();
+            task.description = query.value("description").toString();
+            task.workDir = query.value("work_dir").toString();
+            task.modelPath = query.value("model_path").toString();
+            task.modelType = query.value("model_type").toString();
+            task.assignedTo = query.value("assigned_to").toInt();
+            task.assignedUsername = query.value("assigned_username").toString();
+            task.assignDescription = query.value("assign_description").toString();
+            task.status = query.value("status").toInt();
+            task.createdBy = query.value("created_by").toInt();
+            task.createTime = query.value("create_time").toDateTime();
+            task.updateTime = query.value("update_time").toDateTime();
+            tasks.append(task);
+        }
+    }
+    
+    return tasks;
+}
+
+QList<Database::TaskInfo> Database::getTaskList(int statusFilter, const QString& typeFilter)
+{
+    QList<TaskInfo> tasks;
+    QSqlQuery query;
+    
+    QString sql = "SELECT DISTINCT t.*, u.username as assigned_username FROM tasks t "
+                 "LEFT JOIN users u ON t.assigned_to = u.id";
+    
+    if (!typeFilter.isEmpty()) {
+        sql += " LEFT JOIN task_analysis_types at ON t.id = at.task_id";
+    }
+    
+    sql += " WHERE 1=1";
+    
+    if (statusFilter >= 0) {
+        sql += " AND t.status = " + QString::number(statusFilter);
+    }
+    
+    if (!typeFilter.isEmpty()) {
+        sql += " AND at.analysis_type = '" + typeFilter + "'";
+    }
+    
+    sql += " ORDER BY t.create_time DESC";
+    
+    if (query.exec(sql)) {
+        while (query.next()) {
+            TaskInfo task;
+            task.id = query.value("id").toInt();
+            task.name = query.value("name").toString();
+            task.description = query.value("description").toString();
+            task.workDir = query.value("work_dir").toString();
+            task.modelPath = query.value("model_path").toString();
+            task.modelType = query.value("model_type").toString();
+            task.assignedTo = query.value("assigned_to").toInt();
+            task.assignedUsername = query.value("assigned_username").toString();
+            task.assignDescription = query.value("assign_description").toString();
+            task.status = query.value("status").toInt();
+            task.createdBy = query.value("created_by").toInt();
+            task.createTime = query.value("create_time").toDateTime();
+            task.updateTime = query.value("update_time").toDateTime();
+            tasks.append(task);
+        }
+    } else {
+        qCritical() << "获取任务列表失败:" << query.lastError().text();
+    }
+    
+    return tasks;
 } 
